@@ -1,5 +1,28 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+###Zonily - A business playbook marketplace
+
+ MVP
+ -Visual Workflow of user experience when they log on
+ -Search: company, role
+ -Filter: industry, revenue, company age
+ -List content
+ -Content details page
+ -Login/My Playbooks
+ -playbook content: master/details
+ -recommended playbook section
+ -"others bought" section 
+ -page listing whats already bought
+ -user profile page
+
+ 
+ Stretch Feature
+ -bookmark parts of Playbooks
+ -splash page
+
+
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 

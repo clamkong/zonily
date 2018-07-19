@@ -1,0 +1,12 @@
+.app-header {
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: sandybrown;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.app-header .logo{
+    height: 100%;
+}

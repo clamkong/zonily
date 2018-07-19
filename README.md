@@ -19,8 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  Stretch Feature
  -bookmark parts of Playbooks
  -splash page
-
-
+ -rating playbook
 
 
 Below you will find some information on how to perform common tasks.<br>

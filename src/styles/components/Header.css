@@ -10,3 +10,7 @@
 .app-header .logo{
     height: 100%;
 }
+
+.app-header .is-active {
+    font-weight: bold;
+}

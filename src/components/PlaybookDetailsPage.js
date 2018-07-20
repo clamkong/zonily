@@ -1,10 +1,11 @@
 import React from 'react';
 import AuthorDetails from './AuthorDetails';
+import ShoppingTile from './ShoppingTile';
 
 export default class PlaybookDetailsPage extends React.Component {
     render() {
         return (
-            <div className="playbook-details">
+            <div className="playbook-details" style={{display: "flex"}}>
                 <div className="playbook-details-content"> 
                     <div className="playbook-title-info">
                         <h1>Playbook Title</h1>
@@ -31,7 +32,7 @@ export default class PlaybookDetailsPage extends React.Component {
                     <AuthorDetails />
                     {`this is the playbook details page for page this for ${this.props.match.params.pId}`}
                 </div>
-                div for shopping widget here
+                <ShoppingTile />
                 
             </div>
         );

@@ -11,6 +11,7 @@ import AboutPage from '../components/AboutPage';
 import LoginPage from '../components/LoginPage';
 import SignupPage from '../components/SignupPage';
 import PlaybookDetailsPage from '../components/PlaybookDetailsPage';
+import AuthorDetails from '../components/AuthorDetails';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -23,6 +24,7 @@ const AppRouter = () => (
                     <Route path="/about" component={AboutPage} />
                     <Route path="/login" component={LoginPage} />
                     <Route path="/signup" component={SignupPage} />
+                    <Route path="/sandbox" component={AuthorDetails} />
                     <Route path="/playbook/:pId" component={PlaybookDetailsPage} />
                 </Switch>
                 

@@ -5,7 +5,12 @@ import playbooksData from '../data/mock/playbooks';
 
 
 export default class MarketPlacePage extends React.Component {
-
+    constructor(props){
+        super(props);
+        this.state = {
+            playbooksData
+        }
+    }
     render() {
         return (
             <div className="marketplace-page">
@@ -15,7 +20,7 @@ export default class MarketPlacePage extends React.Component {
 
                 <div className="cards-container">
                     {
-                        playbooksData.length === 0 ? (
+                        this.state.playbooksData.length === 0 ? (
                             <p> No Playbooks </p>
                         ) : (
                                 <Card.Group itemsPerRow={4}>

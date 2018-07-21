@@ -16,10 +16,13 @@ const Header = withRouter(({history}) => (
             <div className="header__inner__right">
                 <div className="header-nav">
                     <span className="header--nav-item">
+                        <NavLink to="/about" activeClassName="is-active">About</NavLink>
+                    </span>
+                    <span className="header--nav-item">
                         <NavLink to="/marketplace" activeClassName="is-active">Marketplace</NavLink>
                     </span>
                     <span className="header--nav-item">
-                        <NavLink to="/about" activeClassName="is-active">About</NavLink>
+                        <NavLink to="/myplaybooks" activeClassName="is-active">My Playbooks</NavLink>
                     </span>
                     <span className="header--nav-item">
                         <NavLink to="/myplaybooks" activeClassName="is-active">My Playbooks</NavLink>

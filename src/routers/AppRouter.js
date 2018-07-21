@@ -12,7 +12,7 @@ import LoginPage from '../components/LoginPage';
 import SignupPage from '../components/SignupPage';
 import PlaybookDetailsPage from '../components/PlaybookDetailsPage';
 import AuthorDetails from '../components/AuthorDetails';
-import MyPlaybooksPage from '../components/MyPlaybooks';
+import MyPlaybooksPage from '../components/MyPlaybooksPage';
 
 const AppRouter = () => (
     <BrowserRouter>

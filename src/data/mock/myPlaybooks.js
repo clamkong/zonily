@@ -10,14 +10,6 @@ const myPlaybooks = [
     {
         id: 2,
         name: "Playbook2"
-    },
-    {
-        id: 3,
-        name: "Playbook2"
-    },
-    {
-        id: 4,
-        name: "Playbook2"
     }
 ];
 

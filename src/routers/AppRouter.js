@@ -12,6 +12,7 @@ import LoginPage from '../components/LoginPage';
 import SignupPage from '../components/SignupPage';
 import PlaybookDetailsPage from '../components/PlaybookDetailsPage';
 import AuthorDetails from '../components/AuthorDetails';
+import MyPlaybooksPage from '../components/MyPlaybooks';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -21,6 +22,7 @@ const AppRouter = () => (
                 <Switch>
                     <Route path="/" component={SplashPage} exact={true} />
                     <Route path="/marketplace" component={MarketPlacePage} />
+                    <Route path="/myplaybooks" component={MyPlaybooksPage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/login" component={LoginPage} />
                     <Route path="/signup" component={SignupPage} />

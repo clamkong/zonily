@@ -21,6 +21,9 @@ const Header = withRouter(({history}) => (
                     <span className="header--nav-item">
                         <NavLink to="/about" activeClassName="is-active">About</NavLink>
                     </span>
+                    <span className="header--nav-item">
+                        <NavLink to="/myplaybooks" activeClassName="is-active">My Playbooks</NavLink>
+                    </span>
                 </div>
                 <div className="shopping-cart">
                     <Button 

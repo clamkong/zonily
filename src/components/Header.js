@@ -24,14 +24,14 @@ const Header = withRouter(({history}) => (
                     <span className="header--nav-item">
                         <NavLink to="/myplaybooks" activeClassName="is-active">My Playbooks</NavLink>
                     </span>
-                    <span className="header--nav-item">
-                        <NavLink to="/myplaybooks" activeClassName="is-active">My Playbooks</NavLink>
-                    </span>
                 </div>
                 <div className="shopping-cart">
                     <Button 
                         className="header__cart-item"
                         icon
+                        onClick={() => {
+                            history.push('/cart');
+                        }}
                     >
                         <Icon name="cart" />
                     </Button>

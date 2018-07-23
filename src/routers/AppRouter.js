@@ -13,6 +13,7 @@ import SignupPage from '../components/SignupPage';
 import PlaybookDetailsPage from '../components/PlaybookDetailsPage';
 import AuthorDetails from '../components/AuthorDetails';
 import MyPlaybooksPage from '../components/MyPlaybooksPage';
+import MyCartPage from '../components/MyCartPage';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -23,6 +24,7 @@ const AppRouter = () => (
                     <Route path="/" component={SplashPage} exact={true} />
                     <Route path="/marketplace" component={MarketPlacePage} />
                     <Route path="/myplaybooks" component={MyPlaybooksPage} />
+                    <Route path="/cart" component={MyCartPage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/login" component={LoginPage} />
                     <Route path="/signup" component={SignupPage} />

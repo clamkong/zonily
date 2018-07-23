@@ -29,6 +29,9 @@ const Header = withRouter(({history}) => (
                     <Button 
                         className="header__cart-item"
                         icon
+                        onClick={() => {
+                            history.push('/cart');
+                        }}
                     >
                         <Icon name="cart" />
                     </Button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthorDetails from './AuthorDetails';
+import AuthorDetails from '../AuthorDetails/AuthorDetails';
 import ShoppingTile from './ShoppingTile';
 
 export default class PlaybookDetailsPage extends React.Component {

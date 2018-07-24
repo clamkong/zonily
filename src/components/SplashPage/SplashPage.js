@@ -1,6 +1,6 @@
 import React from 'react';
-import StockPhoto1 from '../images/stock_photo1.jpg'
-import StockPhoto2 from '../images/stock_photo2.jpg'
+import StockPhoto2 from '../../images/stock_photo2.jpg';
+import "../../styles/components/SplashPage.css";
 
 export default class SplashPage extends React.Component {
     render(){

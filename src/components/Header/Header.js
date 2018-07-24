@@ -1,7 +1,9 @@
 import React from 'react';
-import logoImg from '../images/Zonily Logo.png';
 import { NavLink, withRouter } from 'react-router-dom';
-import {Button, Icon} from 'semantic-ui-react';
+import { Button, Icon } from 'semantic-ui-react';
+
+import logoImg from '../../images/Zonily Logo.png';
+import './Header.css';
 
 const Header = withRouter(({history}) => (
     <header className="app-header">

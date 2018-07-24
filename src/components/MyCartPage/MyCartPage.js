@@ -1,7 +1,10 @@
 import React from 'react';
-import playbooks from '../data/mock/playbooks';
-import CartItem from './CartItem';
 import { Button } from 'semantic-ui-react';
+
+import playbooks from '../../data/mock/playbooks';
+import CartItem from './CartItem';
+
+import "./MyCartPage.css";
 
 export default class MyCartPage extends React.Component {
     render() {

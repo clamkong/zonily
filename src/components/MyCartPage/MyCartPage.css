@@ -1,0 +1,16 @@
+.my-cart-page .my-cart-page-contents {
+  display: flex;
+}
+
+.my-cart-page .my-cart-page-contents .cart-contents {
+  width: 640px;
+  background-color: white;
+}
+
+.my-cart-page .my-cart-page-contents .my-cart-page__right{
+  margin-left: 40px;
+}
+
+.my-cart-page .my-cart-page-contents .my-cart-page__right .cart-checkout-action{
+  margin-top: 20px;
+}

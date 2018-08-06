@@ -1,21 +1,63 @@
 import React from 'react';
 
-const IntroSection = () => {
-    return (
-        <section id="intro">
-            <div className="shadow-overlay"></div>
-            <div className="intro-content">
-                <div className="row">
-                    <div className="col-twelve">
-                        <h5>Hello welcome to Zonily.</h5>
-                        <h1>The Business Playbook Marketplace.</h1>
+export default class IntroSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            emailSubmitted: false
+        }
+    }
 
-                        <a className="button stroke smoothscroll" href="#process" title="">Learn More</a>
+    onFormSubmit = (e) => {
+        //axios calls form submit
+        console.log(`Submitting email ${e.target[0].value}`)
+        e.target[0].value = "";
+
+        this.setState({
+            emailSubmitted: true
+        });
+
+        e.preventDefault();
+    }
+
+    getSubscribeForm = () => {
+        return (
+            <form id="mc-form" onSubmit={this.onFormSubmit} className="group">
+                <span>
+                    <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email us to learn more" />
+                </span>
+                <button className="stroke" type="submit" name="subscribe">Submit</button>
+            </form>
+        )
+    }
+
+    getEmailSubmittedMessage = () => {
+        return (
+            <h5>Great! You've been signed up for updates!</h5>
+        )
+    }
+
+    render() {
+        //dont need the "learn more" button but keep the code for now
+        //<a className="button stroke smoothscroll" href="#process" title="">Learn More</a>
+        return (
+            <section id="intro">
+                <div className="shadow-overlay"></div>
+                <div className="intro-content">
+                    <div className="row">
+                        <div className="col-twelve">
+                            <h5>Hello welcome to Zonily.</h5>
+                            <h1>The Business Playbook Marketplace.</h1>
+                            <h5>We connect the experience of successful entrepreneurs to you.</h5>
+                            <div className="subscribe-form">
+                                {
+                                    this.state.emailSubmitted ? this.getEmailSubmittedMessage() : this.getSubscribeForm()
+                                }
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    );
+            </section>
+        );
+    }
 }
-
-export default IntroSection;

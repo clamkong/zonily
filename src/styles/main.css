@@ -1219,6 +1219,42 @@ a.menu-toggle {
 	border-color: #05bca9;
 }
 
+.intro-content .subscribe-form{
+	height: 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.intro-content .subscribe-form #mc-form {
+	display:flex;
+	justify-content: center;
+	height: 100%;
+}
+.intro-content .subscribe-form #mc-form input,button{
+	height: 100%;
+}
+
+.intro-content .subscribe-form #mc-form button{
+	margin-left: 10px;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+	line-height: 3rem;
+}
+
+.intro-content .subscribe-form #mc-form input{
+	width: 300px;
+	background: rgba(76, 175, 80, 0);
+	border: none;
+	color: white;
+	font-family: "raleway-bold", sans-serif;
+
+}
+
+.intro-content .subscribe-form #mc-form span{
+	border: 3px white solid;
+}
+
+
 /**
  * responsive:
  * intro

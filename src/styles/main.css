@@ -1219,41 +1219,41 @@ a.menu-toggle {
 	border-color: #05bca9;
 }
 
-.intro-content .subscribe-form{
+.intro-content .subscribe-container{
 	height: 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
+	font-family: "raleway-bold", sans-serif;
 }
 
-.intro-content .subscribe-form #mc-form {
+.intro-content .subscribe-container #subscribe-form {
 	display:flex;
 	justify-content: center;
 	height: 100%;
 }
-.intro-content .subscribe-form #mc-form input,button{
+.intro-content .subscribe-container #subscribe-form input,button{
 	height: 100%;
 }
 
-.intro-content .subscribe-form #mc-form button{
+.intro-content .subscribe-container #subscribe-form button{
 	margin-left: 10px;
 	border-color: #FFFFFF;
 	color: #FFFFFF;
 	line-height: 3rem;
+	font-size: 1.5rem;
 }
 
-.intro-content .subscribe-form #mc-form input{
+.intro-content .subscribe-container #subscribe-form input{
 	width: 300px;
 	background: rgba(76, 175, 80, 0);
-	border: none;
 	color: white;
 	font-family: "raleway-bold", sans-serif;
-
+	border: 3px solid white;
 }
 
-.intro-content .subscribe-form #mc-form span{
-	border: 3px white solid;
+.intro-content .subscribe-container h5{
+	font-size: 1.5rem;
 }
-
 
 /**
  * responsive:

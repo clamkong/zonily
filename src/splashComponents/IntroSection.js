@@ -22,7 +22,7 @@ export default class IntroSection extends React.Component {
 
     getSubscribeForm = () => {
         return (
-            <form id="mc-form" onSubmit={this.onFormSubmit} className="group">
+            <form id="subscribe-form" onSubmit={this.onFormSubmit} className="group">
                 <span>
                     <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email us to learn more" />
                 </span>
@@ -49,7 +49,7 @@ export default class IntroSection extends React.Component {
                             <h5>Hello welcome to Zonily.</h5>
                             <h1>The Business Playbook Marketplace.</h1>
                             <h5>We connect the experience of successful entrepreneurs to you.</h5>
-                            <div className="subscribe-form">
+                            <div className="subscribe-container">
                                 {
                                     this.state.emailSubmitted ? this.getEmailSubmittedMessage() : this.getSubscribeForm()
                                 }

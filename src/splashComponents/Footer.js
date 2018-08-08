@@ -5,21 +5,8 @@ const Footer = () => {
         <footer>
             <div className="footer-main">
                 <div className="row">
-                    <div className="col-four tab-1-3 mob-full footer-subscribe">
-                        <h4>Contact Us</h4>
-                        <p>
-                            Questions? Want to be a Beta User? Want to be a
-                            Playbook Partner? Let us know!
-                        </p>
-                        <div className="subscribe-form">
-                            <form id="mc-form" className="group">
-                                <input type="text" name="dName" className="email" id="mc-name" placeholder="Name" required="true" />
-                                <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email" required="true" />
-                                <textarea className="email" id="mc-message" placeholder="Message (Optional)" />
-                                <button type="submit" name="subscribe">Send Message</button>
-                                <label className="subscribe-message"></label>
-                            </form>
-                        </div>
+                    <div className="col-four tab-full mob-full footer-info">
+                        <div className="footer-logo"></div>
                     </div>
                     <div className="col-two tab-1-3 mob-1-2 site-links">
                         <h4>Site Links</h4>
@@ -52,8 +39,21 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-four tab-full mob-full footer-info">
-                        <div className="footer-logo"></div>
+                    <div className="col-four tab-1-3 mob-full footer-subscribe">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Questions? Want to be a Beta User? Want to be a
+                            Playbook Partner? Let us know!
+                        </p>
+                        <div className="subscribe-form">
+                            <form id="mc-form" className="group">
+                                <input type="text" name="dName" className="email" id="mc-name" placeholder="Name (Required)" required="true" />
+                                <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email (Required)" required="true" />
+                                <textarea className="email" id="mc-message" placeholder="Message (Optional)" />
+                                <button type="submit" name="subscribe">Send Message</button>
+                                <label className="subscribe-message"></label>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

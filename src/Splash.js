@@ -11,18 +11,69 @@ import "./styles/base.css";
 import "./styles/main.css";
 import "./styles/vendor.css";
 
-const Splash = () => {
-    return (
-        <div className="splash">
-            <Header />
-            <IntroSection />
-            <AboutSection />
-            <FeaturesSection />
-            <PlaybookPartnersSection />
-            <FAQSection />
-            <Footer />
-        </div>
-    )
+export default class Splash extends React.Component {
+    //FIXME: lol we need to get this jquery out of react
+    componentDidMount() {
+        // eslint-disable-next-line
+        var toggleButton = $('.menu-toggle'),
+            // eslint-disable-next-line
+            nav = $('.main-navigation');
+
+        toggleButton.on('click', function (event) {
+            event.preventDefault();
+
+            toggleButton.toggleClass('is-clicked');
+            nav.slideToggle();
+        });
+
+        if (toggleButton.is(':visible')) nav.addClass('mobile');
+        // eslint-disable-next-line
+        $(window).resize(function () {
+            if (toggleButton.is(':visible')) nav.addClass('mobile');
+            else nav.removeClass('mobile');
+        });
+        // eslint-disable-next-line
+        $('#main-nav-wrap li a').on("click", function () {
+
+            if (nav.hasClass('mobile')) {
+                toggleButton.toggleClass('is-clicked');
+                nav.fadeOut();
+            }
+        });
+        // eslint-disable-next-line
+        var sections = $("section"),
+            // eslint-disable-next-line
+            navigation_links = $("#main-nav-wrap li a");
+
+        sections.waypoint({
+            handler: function (direction) {
+                var active_section;
+                // eslint-disable-next-line
+                active_section = $('section#' + this.element.id);
+
+                if (direction === "up") active_section = active_section.prev();
+                // eslint-disable-next-line
+                var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');
+
+                navigation_links.parent().removeClass("current");
+                active_link.parent().addClass("current");
+            },
+            offset: '25%'
+        });
+    }
+
+    render() {
+        return (
+            <div className="splash">
+                <Header />
+                <IntroSection />
+                <AboutSection />
+                <FeaturesSection />
+                <PlaybookPartnersSection />
+                <FAQSection />
+                <Footer />
+            </div>
+        )
+    }
 }
 
-export default Splash;

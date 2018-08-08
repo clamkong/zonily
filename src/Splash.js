@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './splashComponents/Header';
 import IntroSection from './splashComponents/IntroSection';
-import ProcessSection from './splashComponents/ProcessSection';
+import AboutSection from './splashComponents/AboutSection';
 import FeaturesSection from './splashComponents/FeaturesSection';
-import TestimonialsSection from './splashComponents/TestimonialsSection';
+import PlaybookPartnersSection from './splashComponents/PlaybookPartnersSection';
 import FAQSection from './splashComponents/FAQSection';
 import Footer from './splashComponents/Footer';
 
@@ -16,9 +16,9 @@ const Splash = () => {
         <div className="splash">
             <Header />
             <IntroSection />
-            <ProcessSection />
+            <AboutSection />
             <FeaturesSection />
-            <TestimonialsSection />
+            <PlaybookPartnersSection />
             <FAQSection />
             <Footer />
         </div>

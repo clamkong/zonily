@@ -3,13 +3,13 @@ import React from 'react';
 import avatar1 from '../images/avatars/avatar-1.jpg'
 import avatar2 from '../images/avatars/avatar-2.jpg'
 
-const TestimonialsSection = () => {
+const PlaybookPartnersSection = () => {
     return (
         <section id="testimonials">
-
             <div className="row">
                 <div className="col-twelve">
-                    <h2 className="h01">Hear What Are Clients Say.</h2>
+                    <h5>Partners</h5>
+                    <h2 className="h01">Who You'll Learn From</h2>
                 </div>
             </div>
             <div className="row flex-container">
@@ -19,8 +19,8 @@ const TestimonialsSection = () => {
                             <div className="testimonial-author">
                                 <img src={avatar1} alt="Author image" />
                                 <div className="author-info">
-                                    Steve Jobs
-                                    <span className="position">CEO, Apple.</span>
+                                    Company A
+                                    <span className="position">John Doe, Owner</span>
                                 </div>
                             </div>
                             <p>
@@ -33,8 +33,8 @@ const TestimonialsSection = () => {
                             <div className="testimonial-author">
                                 <img src={avatar2} alt="Author image" />
                                 <div className="author-info">
-                                    John Doe
-                                    <span>CEO, ABC Corp.</span>
+                                    Company B
+                                    <span>Jane Doe, General Manager</span>
                                 </div>
                             </div>
                             <p>
@@ -50,4 +50,4 @@ const TestimonialsSection = () => {
     );
 }
 
-export default TestimonialsSection;
+export default PlaybookPartnersSection;

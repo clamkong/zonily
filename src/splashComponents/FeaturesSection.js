@@ -5,8 +5,8 @@ const FeaturesSection = () => {
         <section id="features">
             <div className="row section-intro">
                 <div className="col-twelve with-bottom-line">
-                    <h5>Features</h5>
-                    <h1>The Playbooks</h1>
+                    <h5>Playbooks</h5>
+                    <h1>What's in a Playbook?</h1>
 
                     <p className="lead">
                         [Probably describe what a playbook is...]
@@ -74,7 +74,7 @@ const FeaturesSection = () => {
                         </span>
 
                         <div className="service-content">
-                            <h3 className="h05">Tip & Tricks</h3>
+                            <h3 className="h05">Tips & Tricks</h3>
                             <p>
                                 Get tips and tricks learned only by experience
                                 etc. etc

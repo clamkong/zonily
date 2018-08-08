@@ -23,9 +23,7 @@ export default class IntroSection extends React.Component {
     getSubscribeForm = () => {
         return (
             <form id="subscribe-form" onSubmit={this.onFormSubmit} className="group">
-                <span>
-                    <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email us to learn more" />
-                </span>
+                <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email us to learn more" />
                 <button className="stroke" type="submit" name="subscribe">Submit</button>
             </form>
         )

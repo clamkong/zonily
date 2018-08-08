@@ -14,34 +14,40 @@ const FAQSection = () => {
             <div className="row faq-content">
                 <div className="q-and-a block-1-2 block-tab-full group">
                     <div className="bgrid">
-                        <h3>What are the security features?</h3>
-                        <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore
-            in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+                        <h3>When will the marketplace be available?</h3>
+                        <p>
+                            We are hoping to launch early 2019! For updates email us __!
+                        </p>
                     </div>
                     <div className="bgrid">
-                        <h3>How can I update my user profile?</h3>
-                        <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore
-            in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+                        <h3>Can I sign up to be a beta user?</h3>
+                        <p>
+                            Yes email us!
+                        </p>
                     </div>
                     <div className="bgrid">
-                        <h3>What features are not included in the free version?</h3>
-                        <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore
-            in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+                        <h3>How much will it cost?</h3>
+                        <p>
+                            Playbook subscriptions will be about $25 to $50 a month.
+                        </p>
                     </div>
                     <div className="bgrid">
-                        <h3>Can I upgrade my account from Starter to Premium?</h3>
-                        <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore
-            in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+                        <h3>Who can I expect playbooks from?</h3>
+                        <p>
+                            We are currently working with some really great business to bring you stuff.
+                        </p>
                     </div>
                     <div className="bgrid">
-                        <h3>Where can I found all my uploads?</h3>
-                        <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore
-            in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+                        <h3>I'm a business owner who wants to write a playbook. How do I get started?</h3>
+                        <p>
+                            Email us!
+                        </p>
                     </div>
                     <div className="bgrid">
-                        <h3>How long can I use the free trial version?</h3>
-                        <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore
-            in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+                        <h3>Other questions?</h3>
+                        <p>
+                            Email us!
+                        </p>
                     </div>
                 </div>
             </div>

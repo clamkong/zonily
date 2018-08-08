@@ -1220,7 +1220,6 @@ a.menu-toggle {
 }
 
 .intro-content .subscribe-container{
-	height: 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	font-family: "raleway-bold", sans-serif;
@@ -1231,8 +1230,26 @@ a.menu-toggle {
 	justify-content: center;
 	height: 100%;
 }
+
+@media only screen and (max-width:425px) {
+	.intro-content .subscribe-container #subscribe-form {
+		display:flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.intro-content .subscribe-container #subscribe-form input{
+		margin-bottom: 10px;
+		font-size: 1.4rem;
+	}
+	.intro-content .subscribe-container #subscribe-form button{
+		font-size: 1.4rem;
+	}	
+}
+
 .intro-content .subscribe-container #subscribe-form input,button{
-	height: 100%;
+	height: 40px;
 }
 
 .intro-content .subscribe-container #subscribe-form button{
@@ -1241,10 +1258,12 @@ a.menu-toggle {
 	color: #FFFFFF;
 	line-height: 3rem;
 	font-size: 1.5rem;
+	width: 117.422px;
+	height: 40px;
 }
 
 .intro-content .subscribe-container #subscribe-form input{
-	width: 300px;
+	width: 250px;
 	background: rgba(76, 175, 80, 0);
 	color: white;
 	font-family: "raleway-bold", sans-serif;
@@ -2252,7 +2271,7 @@ footer ul li {
 .footer-main .footer-subscribe .subscribe-form #mc-form {
 	padding: 0;
 }
-.footer-main .footer-subscribe .subscribe-form input[type="email"] {
+.footer-main .footer-subscribe .subscribe-form input,textarea {
 	padding: .6rem 2rem;
 	border-radius: 5px;
 	background: #232933;
@@ -2262,8 +2281,13 @@ footer ul li {
 	color: #bababa;
 	margin-bottom: 1.8rem;
 }
-.footer-main .footer-subscribe .subscribe-form input[type="submit"] {
-	display: none;
+
+.footer-main .footer-subscribe .subscribe-form textarea {
+	min-height: 15rem;
+}
+
+.footer-main .footer-subscribe .subscribe-form button {
+	line-height: .8rem;
 }
 .footer-main .footer-subscribe .subscribe-form .subscribe-message {
 	font-family: "raleway-bold", sans-serif;
@@ -2329,7 +2353,7 @@ footer ul li {
 	.footer-main .footer-subscribe {
 		text-align: center;
 	}
-	.footer-main .subscribe-form form input[type="email"] {
+	.footer-main .subscribe-form form input,textarea {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		text-align: center;

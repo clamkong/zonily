@@ -20,7 +20,7 @@ const FeaturesSection = () => {
                 <div className="features-list block-1-3 block-s-1-2 block-tab-full group">
                     <div className="bgrid feature">
                         <span className="icon">
-                            <i className="icon-window"></i>
+                            <i className="icon-video"></i>
                         </span>
                         <div className="service-content">
                             <h3 className="h05">
@@ -34,7 +34,7 @@ const FeaturesSection = () => {
                     </div>
                     <div className="bgrid feature">
                         <span className="icon">
-                            <i className="icon-eye"></i>
+                            <i className="icon-calendar"></i>
                         </span>
                         <div className="service-content">
                             <h3 className="h05">Timelines</h3>
@@ -60,7 +60,7 @@ const FeaturesSection = () => {
                     </div>
                     <div className="bgrid feature">
                         <span className="icon">
-                            <i className="icon-file"></i>
+                            <i className="icon-users"></i>
                         </span>
                         <div className="service-content">
                             <h3 className="h05">Role Descriptions</h3>
@@ -77,22 +77,21 @@ const FeaturesSection = () => {
                         <div className="service-content">
                             <h3 className="h05">Resources</h3>
                             <p>
-                                Not only do we outline what you should do to build your business,
-                                we connect you resources to get help you execute your vision. 
-                                Find all the resources you need to build your best business here at Zonily.
+                                Get connected to resources to get help you execute your vision. 
+                                You'll find all the resources you need to build your best business.
                                 Don't see a resource you need? Let us know and we'll find it for you!
                             </p>
                         </div>
                     </div>
                     <div className="bgrid feature">
                         <span className="icon">
-                            <i className="icon-gift"></i>
+                            <i className="icon-light-bulb"></i>
                         </span>
 
                         <div className="service-content">
                             <h3 className="h05">Tips & Tricks</h3>
                             <p>
-                                Get tips and tricks learned only be experience. Learn valuable insights on
+                                Get tips and tricks learned only by experience. Learn valuable insights on
                                 building a business that you otherwise wouldn't have thought to search for.
                             </p>
                         </div>

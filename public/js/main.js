@@ -152,14 +152,14 @@
 	------------------------------------------------------ */
 
 	// Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-	var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
+	// var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
 
-	$('#mc-form').ajaxChimp({
+	// $('#mc-form').ajaxChimp({
 
-		language: 'es',
-	   url: mailChimpURL
+	// 	language: 'es',
+	//    url: mailChimpURL
 
-	});
+	// });
 
 	// Mailchimp translation
 	//
@@ -172,15 +172,15 @@
 	//  4: 'The username portion of the email address is invalid (the portion before the @: )',
 	//  5: 'This email address looks fake or invalid. Please enter a real email address'
 
-	$.ajaxChimp.translations.es = {
-	  'submit': 'Submitting...',
-	  0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
-	  1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
-	  2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-	  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-	  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
-	  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-	}
+	// $.ajaxChimp.translations.es = {
+	//   'submit': 'Submitting...',
+	//   0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
+	//   1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
+	//   2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+	//   3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+	//   4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+	//   5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
+	// }
 
 
 	/*---------------------------------------------------- */

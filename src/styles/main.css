@@ -837,10 +837,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 42px;
-	height: 42px;
-	background: url("../images/zonily-logo.png") no-repeat center;
-	background-size: 42px 42px;
+	width: 60px;
+	height: 60px;
+	background: url("../images/zonily-logo-panda-only.png") no-repeat center;
+	background-size: 60px 60px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -2209,6 +2209,84 @@ a.menu-toggle {
 
 /** 
  * ===================================================================
+ * contact-us section
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#contact-us {
+	/* background: #FFFFFF; */
+	background: linear-gradient( rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3)), url("../images/restaurant-3.jpg") repeat center;
+	background-size: cover;
+	padding-top: 10.2rem;
+	padding-bottom: 12rem;
+	position: relative;
+	min-height: 20.4rem;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#contact-us h5 {
+	color: white;
+}
+
+#contact-us .flex-container {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: "raleway-bold", sans-serif;
+	color: white;
+}
+
+#contact-us .flex-container ul{
+	list-style-type: none;
+}
+
+#contact-us .subscribe-form {
+	display: flex;
+	justify-content: center;
+}
+
+#contact-us .subscribe-form #mc-form {
+	width: 500px;
+	padding: 0;
+}
+
+#contact-us .subscribe-form input {
+	padding: .6rem 2rem;
+	border-radius: 5px;
+	/* background: #232933; */
+	/* border: none; */
+	width: 100%;
+	font-family: "raleway-regular", sans-serif;
+	color: #bababa;
+	margin-bottom: 1.8rem;
+}
+
+#contact-us .subscribe-form textarea {
+	padding: .6rem 2rem;
+	border-radius: 5px;
+	/* background: #232933; */
+	/* border: none; */
+	width: 100%;
+	font-family: "raleway-regular", sans-serif;
+	color: #bababa;
+	margin-bottom: 1.8rem;
+	min-height: 15rem;
+}
+
+#contact-us .subscribe-form button {
+	border-color: #FFFFFF;
+    color: #FFFFFF;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    /* height: 40px; */
+}
+
+
+/** 
+ * ===================================================================
  * footer
  *
  * ------------------------------------------------------------------- 
@@ -2258,20 +2336,20 @@ footer ul li {
 	color: #FFFFFF;
 }
 .footer-main .footer-logo {
-	width: 162px;
-	height: 39px;
-	background: url("../images/footer-logo.png") no-repeat center;
-	background-size: 162px 39px;
+	width: 60px;
+	height: 60px;
+	background: url("../images/zonily-logo-panda-only.png") no-repeat center;
+	background-size: 60px 60px;
 	margin: -.6rem 0 2.1rem -.3rem;
 	display: block;
 }
-.footer-main .footer-subscribe p {
+/* .footer-main .footer-subscribe p {
 	margin-bottom: 1.2rem;
 }
 .footer-main .footer-subscribe .subscribe-form #mc-form {
 	padding: 0;
 }
-.footer-main .footer-subscribe .subscribe-form input,textarea {
+.footer-main .footer-subscribe .subscribe-form input {
 	padding: .6rem 2rem;
 	border-radius: 5px;
 	background: #232933;
@@ -2283,12 +2361,20 @@ footer ul li {
 }
 
 .footer-main .footer-subscribe .subscribe-form textarea {
+	padding: .6rem 2rem;
+	border-radius: 5px;
+	background: #232933;
+	border: none;
+	width: 100%;
+	font-family: "raleway-regular", sans-serif;
+	color: #bababa;
+	margin-bottom: 1.8rem;
 	min-height: 15rem;
 }
 
 .footer-main .footer-subscribe .subscribe-form button {
 	line-height: .8rem;
-}
+} */
 .footer-main .footer-subscribe .subscribe-form .subscribe-message {
 	font-family: "raleway-bold", sans-serif;
 	color: #FFFFFF;
@@ -2350,14 +2436,14 @@ footer ul li {
 	.footer-main .row {
 		max-width: 420px;
 	}
-	.footer-main .footer-subscribe {
+	/* .footer-main .footer-subscribe {
 		text-align: center;
 	}
 	.footer-main .subscribe-form form input,textarea {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		text-align: center;
-	}
+	} */
 	.footer-bottom {
 		padding-bottom: .6rem;
 	}

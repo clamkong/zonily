@@ -10,12 +10,9 @@ const AboutSection = () => {
                 </div>
             </div>
             <div className="row flex-container">
-                <p>Have you ever wondered <span style={{ "textDecoration": "underline", "fontWeight": "bold" }}>what</span> you should be doing to achieve your business goals?</p>
-                <p>Have you ever wondered <span style={{ "textDecoration": "underline", "fontWeight": "bold" }}>how</span> you can take your current business to the next level?</p>
                 <p>Starting a business is hard. Running a business is even harder.</p>
-
                 <p>We understand. That's why we built Zonily.</p>
-                <p>Zonily is a marketplace of stories that inspire and playbooks that guide.</p>
+                <p>Zonily is a marketplace for stories that inspire and playbooks that guide.</p>
                 <p>
                     At Zonily, you will find playbooks developed by some of the most inspirational and
                     experienced entrepreneurs who will give you insight into steps and strategies

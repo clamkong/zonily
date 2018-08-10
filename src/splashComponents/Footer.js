@@ -32,9 +32,6 @@ const Footer = () => {
                     <div className="col-twelve">
                         <div className="copyright">
                             <span>© Copyright Zonily Inc. 2018.</span>
-                            <span>Design by
-                            <a href="http://www.styleshout.com/"> styleshout</a>
-                            </span>
                         </div>
                         <div id="go-top" style={{ display: "block" }}>
                             <a className="smoothscroll" title="Back to Top" href="#top">

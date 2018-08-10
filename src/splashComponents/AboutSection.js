@@ -11,12 +11,14 @@ const AboutSection = () => {
                     <div className="lead">
                         <p>Have you ever wondered <span style={{"textDecoration": "underline", "fontWeight": "bold"}}>what</span> you should be doing to achieve your business goals?</p>
                         <p>Have you ever wondered <span style={{ "textDecoration": "underline", "fontWeight": "bold" }}>how</span> you can take your current business to the next level?</p>
+                        <p>Starting a business is hard. Running a business is even harder.</p>
+
                         <p>We understand. That's why we built Zonily.</p>
                         <p>Zonily is a marketplace of stories that inspire and playbooks that guide.</p>
                         <p>
-                            At Zonily, you will find playbooks developed from some of the most inspirational and 
-                            experienced entrepreneurs that will give you insight on the steps and strategies 
-                            on how to build a successful business. 
+                            At Zonily, you will find playbooks developed by some of the most inspirational and 
+                            experienced entrepreneurs who will give you insight on the steps and strategies 
+                            for how to build a successful business. 
                         </p>
                         <p>
                             Our mission at Zonily is to bring you the tools, 

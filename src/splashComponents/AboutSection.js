@@ -14,7 +14,7 @@ const AboutSection = () => {
                         <p>We understand. That's why we built Zonily.</p>
                         <p>Zonily is a marketplace of stories that inspire and playbooks that guide.</p>
                         <p>
-                            At Zonily, you will find playbooks by some of the most inspirational and 
+                            At Zonily, you will find playbooks developed from some of the most inspirational and 
                             experienced entrepreneurs that will give you insight on the steps and strategies 
                             on how to build a successful business. 
                         </p>

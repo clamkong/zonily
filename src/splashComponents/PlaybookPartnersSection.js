@@ -13,7 +13,7 @@ const PlaybookPartnersSection = () => {
                 </div>
             </div>
             <div className="row flex-container">
-                Our partners have between $1 million - $25 million in revenue.
+                Our partners have businesses earning between $1 million - $25 million in revenue.
                 <div>We are currently developing their playbooks! Stay tuned!</div>
             </div>
         </section>

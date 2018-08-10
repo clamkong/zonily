@@ -9,8 +9,8 @@ const FeaturesSection = () => {
                     <h1>What's in a Playbook?</h1>
 
                     <p className="lead">
-                        Zonily Playbook: An official set of processes, strategies, tactics, and actions
-                        for an entire business, including the stories, timelines, and resources 
+                        Zonily Playbook: An official set of processes, strategies, tactics and actions
+                        for an entire business. These include the stories, timelines, and resources 
                         that made it happen.
                     </p>
                 </div>
@@ -28,7 +28,7 @@ const FeaturesSection = () => {
                             </h3>
                             <p>
                                 Hear directly from business owners about their
-                                story, their challenges, and their visions.
+                                stories, their challenges, and their visions.
                             </p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ const FeaturesSection = () => {
                         <div className="service-content">
                             <h3 className="h05">Resources</h3>
                             <p>
-                                Get connected to resources to get help you execute your vision. 
+                                Get connected with resources to help you execute your vision. 
                                 You'll find all the resources you need to build your best business.
                                 Don't see a resource you need? Let us know and we'll find it for you!
                             </p>
@@ -91,7 +91,7 @@ const FeaturesSection = () => {
                         <div className="service-content">
                             <h3 className="h05">Tips & Tricks</h3>
                             <p>
-                                Get tips and tricks learned only by experience. Learn valuable insights on
+                                Get tips and tricks learned only from those with experience. Learn valuable insights on
                                 building a business that you otherwise wouldn't have thought to search for.
                             </p>
                         </div>

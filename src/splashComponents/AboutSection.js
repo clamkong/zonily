@@ -17,13 +17,13 @@ const AboutSection = () => {
                         <p>Zonily is a marketplace of stories that inspire and playbooks that guide.</p>
                         <p>
                             At Zonily, you will find playbooks developed by some of the most inspirational and 
-                            experienced entrepreneurs who will give you insight on the steps and strategies 
+                            experienced entrepreneurs who will give you insight into steps and strategies 
                             for how to build a successful business. 
                         </p>
                         <p>
                             Our mission at Zonily is to bring you the tools, 
-                            resources, methods, and systems that can help you scale and grow your 
-                            business efficiently, so that you can spend your time, energy, and money on 
+                            resources, methods and systems that can help you scale and grow your 
+                            business. With Zonily's help, you'll be able to spend your time, energy, and money on 
                             what’s most important to you.
                         </p>
                     </div>

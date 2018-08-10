@@ -44,7 +44,7 @@ export default class IntroSection extends React.Component {
                 <div className="intro-content">
                     <div className="row">
                         <div className="col-twelve">
-                            <h5>Hello welcome to Zonily.</h5>
+                            <h5>Hello, welcome to Zonily.</h5>
                             <h1>The Business Playbook Marketplace.</h1>
                             <h5>We connect the experience of successful entrepreneurs to you.</h5>
                             <div className="subscribe-container">

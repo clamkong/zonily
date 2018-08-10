@@ -47,7 +47,7 @@ const FeaturesSection = () => {
 
                     <div className="bgrid feature">
                         <span className="icon">
-                            <i className="icon-paint-brush"></i>
+                            <i className="icon-shuffle"></i>
                         </span>
 
                         <div className="service-content">

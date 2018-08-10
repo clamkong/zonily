@@ -1468,7 +1468,16 @@ a.menu-toggle {
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 	overflow: hidden;
+	text-align: center;
 }
+
+#process .flex-container{
+	width: 80%;
+    max-width: 800px;
+	margin: 0 auto;
+	color: rgba(0, 0, 0, 0.80)
+}
+
 .process-content {
 	position: relative;
 	text-align: center;
@@ -1856,6 +1865,7 @@ a.menu-toggle {
 	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
+	color: rgba(0, 0, 0, 0.80);
 }
 #testimonial-slider {
 	margin: 0 0 3rem 0;

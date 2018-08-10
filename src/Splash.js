@@ -4,12 +4,16 @@ import IntroSection from './splashComponents/IntroSection';
 import AboutSection from './splashComponents/AboutSection';
 import FeaturesSection from './splashComponents/FeaturesSection';
 import PlaybookPartnersSection from './splashComponents/PlaybookPartnersSection';
+import PricingSection from './splashComponents/PricingSection';
+import ContactUsSection from './splashComponents/ContactUsSection';
 import FAQSection from './splashComponents/FAQSection';
 import Footer from './splashComponents/Footer';
 
 import "./styles/base.css";
 import "./styles/main.css";
 import "./styles/vendor.css";
+
+
 
 export default class Splash extends React.Component {
     //FIXME: lol we need to get this jquery out of react
@@ -70,7 +74,8 @@ export default class Splash extends React.Component {
                 <AboutSection />
                 <FeaturesSection />
                 <PlaybookPartnersSection />
-                <FAQSection />
+                <PricingSection />
+                <ContactUsSection />
                 <Footer />
             </div>
         )

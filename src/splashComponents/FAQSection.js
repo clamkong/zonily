@@ -5,7 +5,7 @@ const FAQSection = () => {
         <section id="faq">
             <div className="row section-intro">
                 <div className="col-twelve with-bottom-line">
-                    <h5>Faq</h5>
+                    <h5>FAQ</h5>
                     <h1>Questions and Answers.</h1>
                     <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam
           lorem ipsum Consectetur ut in in eu do.</p>
@@ -48,27 +48,6 @@ const FAQSection = () => {
                         <p>
                             Email us!
                         </p>
-                    </div>
-                </div>
-            </div>
-            <div className="row section-ads">
-                <div className="col-twelve">
-                    <div className="ad-content">
-                        <h2 className="h01">
-                            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a>
-                        </h2>
-
-                        <p className="lead">
-                            Looking for an awesome and reliable webhosting? Try
-            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">
-                                <span>DreamHost</span>
-                            </a>. Get
-            <span>$50 off</span> when you sign up with the promocode
-            <span>styleshout</span>.
-                          </p>
-                        <div className="action">
-                            <a className="button large round" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-                        </div>
                     </div>
                 </div>
             </div>

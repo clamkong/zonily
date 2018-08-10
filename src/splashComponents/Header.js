@@ -27,7 +27,10 @@ const Header = () => {
                             <a className="smoothscroll" href="#testimonials" title="">Partners</a>
                         </li>
                         <li>
-                            <a className="smoothscroll" href="#faq" title="">FAQ</a>
+                            <a className="smoothscroll" href="#pricing" title="">Pricing</a>
+                        </li>
+                        <li>
+                            <a className="smoothscroll" href="#contact-us" title="">Contact Us</a>
                         </li>
 
                     </ul>

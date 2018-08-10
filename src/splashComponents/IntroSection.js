@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 export default class IntroSection extends React.Component {
     constructor(props) {
@@ -11,20 +12,29 @@ export default class IntroSection extends React.Component {
     onFormSubmit = (e) => {
         //axios calls form submit
         console.log(`Submitting email ${e.target[0].value}`)
-        e.target[0].value = "";
 
-        this.setState({
-            emailSubmitted: true
+        const baseURL = "http://zonily-api.herokuapp.com";
+        const endpoint = "/newsletter/signup"
+        const query = "?email=" + e.target[0].value;
+
+        axios.get(baseURL + endpoint + query)
+        .then((resp) => {
+            this.setState({
+                emailSubmitted: true
+            });
+        }).catch((error) =>{
+            throw "error submitting email for subscription"
         });
 
+        e.target[0].value = "";
         e.preventDefault();
     }
 
     getSubscribeForm = () => {
         return (
             <form id="subscribe-form" onSubmit={this.onFormSubmit} className="group">
-                <input type="email" name="dEmail" className="email" id="mc-email" placeholder="Email us for updates" />
-                <button className="stroke" type="submit" name="subscribe">Submit</button>
+                <input type="email" name="dEmail" className="email" id="mc-email" required="true" placeholder="Enter email for updates" />
+                <button className="stroke" type="submit" name="subscribe">Subscribe</button>
             </form>
         )
     }

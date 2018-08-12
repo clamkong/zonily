@@ -64,6 +64,23 @@ export default class Splash extends React.Component {
             },
             offset: '25%'
         });
+        // eslint-disable-next-line
+        $('.smoothscroll').on('click', function (e) {
+
+            e.preventDefault();
+
+            var target = this.hash,
+            // eslint-disable-next-line
+                $target = $(target);
+            // eslint-disable-next-line
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 800, 'swing', function () {
+                window.location.hash = target;
+            });
+
+        });
+
     }
 
     render() {

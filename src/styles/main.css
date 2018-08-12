@@ -2240,6 +2240,10 @@ a.menu-toggle {
 	color: white;
 }
 
+#contact-us ul {
+	margin-left: 0;
+}
+
 #contact-us .flex-container {
 	width: 80%;
 	max-width: 800px;

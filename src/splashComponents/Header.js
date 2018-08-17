@@ -9,7 +9,7 @@ const Header = () => {
         <header>
             <div className="row">
                 <div className="logo">
-                    <a href="index.html">Zonily</a>
+                    <a href="/">Zonily</a>
                 </div>
 
                 <nav id="main-nav-wrap">

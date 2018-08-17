@@ -33,8 +33,8 @@ const Footer = () => {
                         <div className="footer-logo"></div>
                     </div>
                     <div className="footer-content_right">
-                        <span className="fb-link"><a href="https://www.facebook.com/Zonily-287783848656914/"><i className="fab fa-facebook-square fa-2x"></i></a></span>
-                        <span className="ig-link"><a href="https://www.instagram.com/zonilyinc/"><i className="fab fa-instagram fa-2x"></i></a></span>
+                        <span className="fb-link"><a target="_blank" href="https://www.facebook.com/Zonily-287783848656914/"><i className="fab fa-facebook-square fa-2x"></i></a></span>
+                        <span className="ig-link"><a target="_blank" href="https://www.instagram.com/zonilyinc/"><i className="fab fa-instagram fa-2x"></i></a></span>
                     </div>
                 </div>
             </div>

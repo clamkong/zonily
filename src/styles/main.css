@@ -2269,22 +2269,16 @@ a.menu-toggle {
 #contact-us .subscribe-form input {
 	padding: .6rem 2rem;
 	border-radius: 5px;
-	/* background: #232933; */
-	/* border: none; */
 	width: 100%;
 	font-family: "raleway-regular", sans-serif;
-	color: #bababa;
 	margin-bottom: 1.8rem;
 }
 
 #contact-us .subscribe-form textarea {
 	padding: .6rem 2rem;
 	border-radius: 5px;
-	/* background: #232933; */
-	/* border: none; */
 	width: 100%;
 	font-family: "raleway-regular", sans-serif;
-	color: #bababa;
 	margin-bottom: 1.8rem;
 	min-height: 15rem;
 }
@@ -2294,7 +2288,6 @@ a.menu-toggle {
     color: #FFFFFF;
     line-height: 3rem;
     font-size: 1.5rem;
-    /* height: 40px; */
 }
 
 

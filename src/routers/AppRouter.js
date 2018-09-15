@@ -10,12 +10,14 @@ import AuthorDetails from '../components/AuthorDetails/AuthorDetails';
 import MyPlaybooksPage from '../components/MyPlaybooksPage/MyPlaybooksPage';
 import MyCartPage from '../components/MyCartPage/MyCartPage';
 import Splash from '../components/SplashPage/Splash';
+import Preorder from '../components/PreorderPage/PreorderPage'
 
 const AppRouter = () => (
     <BrowserRouter>
       <div className="App">
         <Switch>
             <Route path="/" component={Splash} exact={true} />
+            <Route path="/preorder" component={Preorder} />
             <Route path="/marketplace" component={MarketplacePage} />
             <Route path="/myplaybooks" component={MyPlaybooksPage} />
             <Route path="/cart" component={MyCartPage} />

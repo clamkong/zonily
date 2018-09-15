@@ -2573,9 +2573,11 @@ footer ul li {
 	float: left;
 	width: 50%;
 	text-align: center;
+	padding-left: 150px;
 }
 .preorder-page__right-container {
 	float: right;
 	width: 50%;
 	text-align: center;
+	padding-right: 150px;
 }

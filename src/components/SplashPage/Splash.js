@@ -9,9 +9,9 @@ import ContactUsSection from './splashComponents/ContactUsSection';
 import FAQSection from './splashComponents/FAQSection';
 import Footer from './splashComponents/Footer';
 
-import "./styles/base.css";
-import "./styles/main.css";
-import "./styles/vendor.css";
+import "../../styles/base.css";
+import "../../styles/main.css";
+import "../../styles/vendor.css";
 
 
 
@@ -98,4 +98,3 @@ export default class Splash extends React.Component {
         )
     }
 }
-

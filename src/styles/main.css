@@ -2563,6 +2563,7 @@ footer ul li {
 	position: absolute;
 	width: 100%;
 	top: 30%;
+	background-color: #14181E;
 }
 
 .preorder-page__header {
@@ -2580,4 +2581,18 @@ footer ul li {
 	width: 50%;
 	text-align: center;
 	padding-right: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+	.preorder-page-container {
+		top: 20%;
+	}
+	.preorder-page__left-container {
+		width: 100%;
+		padding: 20px;
+	}
+	.preorder-page__right-container {
+		width: 100%;
+		padding: 20px;
+	}
 }

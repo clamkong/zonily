@@ -2448,6 +2448,14 @@ footer ul li {
 	display: none;
 }
 
+.footer-bottom {
+	margin-top: 3rem;
+	text-align: center;
+}
+.footer-bottom .pp-toc #toc-link {
+	margin-left: 10px;
+}
+
 /**
  * responsive:
  * footer

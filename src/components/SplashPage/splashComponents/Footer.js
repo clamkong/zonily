@@ -46,6 +46,10 @@ const Footer = () => {
                         <div className="copyright">
                             <span>© Copyright Zonily Inc. 2018.</span>
                         </div>
+                        <div className="pp-toc">
+                            <span><a id="pp-link" href="/privacy" target="_blank">Privacy Policy</a></span>
+                            <span><a id="toc-link" href="/privacy" target="_blank">Terms of Service</a></span>
+                        </div>
                         <div id="go-top" style={{ display: "block" }}>
                             <a className="smoothscroll" title="Back to Top" href="#top">
                                 <i className="icon ion-android-arrow-up"></i>

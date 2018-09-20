@@ -2448,6 +2448,14 @@ footer ul li {
 	display: none;
 }
 
+.footer-bottom {
+	margin-top: 3rem;
+	text-align: center;
+}
+.footer-bottom .pp-toc #toc-link {
+	margin-left: 10px;
+}
+
 /**
  * responsive:
  * footer
@@ -2576,8 +2584,7 @@ footer ul li {
 	width: 55%;
 	text-align: center;
 	padding-left: 150px;
-	margin-top: 40px;
-}
+
 .preorder-page__right-container {
 	float: right;
 	padding-right: 150px;

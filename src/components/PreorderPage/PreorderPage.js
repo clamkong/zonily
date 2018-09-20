@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../SplashPage/splashComponents/Header';
 import "../../styles/base.css";
 import "../../styles/main.css";
+import {Elements, StripeProvider} from 'react-stripe-elements';
+import CheckoutForm from '../CheckoutForm';
 
 export default class PreOrderPage extends React.Component {
     render() {
@@ -17,8 +19,6 @@ export default class PreOrderPage extends React.Component {
                 $25.00
                 </h3>
 
-                <button className="stroke" type="submit" name="subscribe">Pre-order</button>
-
                 <div>
                   Overview
                   <div>
@@ -31,7 +31,13 @@ export default class PreOrderPage extends React.Component {
                 </div>
               </div>
               <div className='preorder-page__right-container'>
-                <i className="preorder-page icon-video"/>
+              <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
+                <div className="example">
+                  <Elements>
+                    <CheckoutForm fontSize="16px"/>
+                  </Elements>
+                </div>
+              </StripeProvider>
               </div>
             </div>
           </div>

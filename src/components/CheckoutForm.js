@@ -58,6 +58,7 @@ class CheckoutForm extends Component {
     let {token} = await this.props.stripe.createToken({
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
+      playbook: document.getElementById('playbook').value
     });
     let response = await fetch("http://localhost:4000/charges", {
       method: "POST",
@@ -80,6 +81,15 @@ class CheckoutForm extends Component {
             id="name"
             type="text"
             placeholder="Jane Doe"
+          required />
+        </label>
+        <label>
+          Playbook Choice
+          <input
+            className="StripeElement StripeElement--empty stripe-input"
+            id="playbook"
+            type="text"
+            placeholder="Bobabia or Go Fresh"
           required />
         </label>
         <label>
@@ -112,9 +122,10 @@ class CheckoutForm extends Component {
             {...createOptions(this.props.fontSize)}
           />
         </label>
-        <label>
+        <label className="smaller-label">
           CVC
           <CardCVCElement
+            className='smaller-input'
             onBlur={handleBlur}
             onChange={handleChange}
             onFocus={handleFocus}
@@ -122,9 +133,10 @@ class CheckoutForm extends Component {
             {...createOptions(this.props.fontSize)}
           />
         </label>
-        <label>
+        <label className="smaller-label">
           Postal code
           <PostalCodeElement
+            className='smaller-input'
             onBlur={handleBlur}
             onChange={handleChange}
             onFocus={handleFocus}

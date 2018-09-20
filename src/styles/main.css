@@ -2680,5 +2680,13 @@ input:focus,
 }
 
 .stripe-input {
+	width: 100%;
 	height: 40px !important;
+}
+.smaller-label {
+	width: 50%;
+	float: left;
+}
+.smaller-input {
+	width: 90%;
 }

@@ -55,19 +55,19 @@ class CheckoutForm extends Component {
   }
 
   async submit(ev) {
-  debugger;
-  let {token} = await this.props.stripe.createToken({
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-  });
-  let response = await fetch("http://localhost:4000/charges", {
-    method: "POST",
-    headers: {"Content-Type": "text/plain"},
-    body: token.id
-  });
+    let {token} = await this.props.stripe.createToken({
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      playbook: document.getElementById('playbook').value
+    });
+    let response = await fetch("http://localhost:4000/charges", {
+      method: "POST",
+      headers: {"Content-Type": "text/plain"},
+      body: token.id
+    });
 
-  if (response.ok) this.setState({complete: true});
-}
+    if (response.ok) this.setState({complete: true});
+  }
 
   render() {
     if (this.state.complete) return <h1>Pre-order Complete</h1>;
@@ -76,11 +76,26 @@ class CheckoutForm extends Component {
       <div className="checkout">
         <label>
           Name
-          <input id="name" type="text" placeholder="Jane Doe" required />
+          <input
+            className="StripeElement StripeElement--empty stripe-input"
+            id="name"
+            type="text"
+            placeholder="Jane Doe"
+          required />
+        </label>
+        <label>
+          Playbook Choice
+          <input
+            className="StripeElement StripeElement--empty stripe-input"
+            id="playbook"
+            type="text"
+            placeholder="Bobabia or Go Fresh"
+          required />
         </label>
         <label>
           Email
           <input
+            className="StripeElement StripeElement--empty stripe-input"
             id="email"
             type="email"
             placeholder="jane.doe@example.com"
@@ -107,9 +122,10 @@ class CheckoutForm extends Component {
             {...createOptions(this.props.fontSize)}
           />
         </label>
-        <label>
+        <label className="smaller-label">
           CVC
           <CardCVCElement
+            className='smaller-input'
             onBlur={handleBlur}
             onChange={handleChange}
             onFocus={handleFocus}
@@ -117,9 +133,10 @@ class CheckoutForm extends Component {
             {...createOptions(this.props.fontSize)}
           />
         </label>
-        <label>
+        <label className="smaller-label">
           Postal code
           <PostalCodeElement
+            className='smaller-input'
             onBlur={handleBlur}
             onChange={handleChange}
             onFocus={handleFocus}

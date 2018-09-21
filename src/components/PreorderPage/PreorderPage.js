@@ -30,26 +30,30 @@ export default class PreOrderPage extends React.Component {
                   </div>
                   <ul>
                     <li>Choice of either GoFresh and/or Bobabia</li>
-                    <li>Early Bird access by November 2018</li>
+                    <li>First look at playbooks by Mid-October</li>
                     <li>Priority invite to our Beta User Program</li>
                     <li>
-                      Exclusive invite to our launch party in February
-                      2019
+                      VIP happy hour with all business playbook partners
+                      at our Launch Party in February, 2019
                     </li>
-                    <li>Development update newsletter</li>
+                    <li>Access to our newsletter of all Zonily updates</li>
                   </ul>
                 </div>
                 <div className="videos">
-                  <div className="perk-list__title">Bobabia Playbook Preview:</div>
+                  <div className="perk-list__title">
+                    Bobabia Playbook Preview:
+                  </div>
                   <iframe src="https://drive.google.com/file/d/1Qwi2znqN6wAhJwAF_ZcAKVNavW_rj-V4/preview" />
 
-                  <div className="perk-list__title">GoFresh Playbook Preview:</div>
+                  <div className="perk-list__title">
+                    GoFresh Playbook Preview:
+                  </div>
                   <iframe src="https://drive.google.com/file/d/1xn3kB3k8hFXmYx9MuybiUc4bKa7Dvjz6/preview" />
                 </div>
-              <div>Questions? Contact us at support@zonily.com</div>
+                <div>Questions? Contact us at support@zonily.com</div>
               </div>
               <div className="preorder-page__right-container">
-              <StripeProvider apiKey="pk_live_8ZBOxjftOcLbdSTnPTN8n5d9">
+                <StripeProvider apiKey="pk_live_8ZBOxjftOcLbdSTnPTN8n5d9">
                   <div className="example">
                     <Elements>
                       <CheckoutForm fontSize="16px" />

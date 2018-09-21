@@ -60,9 +60,9 @@ class CheckoutForm extends Component {
       email: document.getElementById('email').value,
       playbook: document.getElementById('playbook').value
     });
-    let response = await fetch("http://localhost:4000/charges", {
+    let response = await fetch("http://zonily-api.herokuapp.com/charges", {
       method: "POST",
-      headers: {"Content-Type": "text/plain"},
+      headers: { "Content-Type": "text/plain" },
       body: token.id
     });
 

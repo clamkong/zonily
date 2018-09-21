@@ -42,14 +42,14 @@ export default class PreOrderPage extends React.Component {
                 <div className="videos">
                   <div className="perk-list__title">Bobabia Playbook Preview:</div>
                   <iframe src="https://drive.google.com/file/d/1Qwi2znqN6wAhJwAF_ZcAKVNavW_rj-V4/preview" />
-                  
+
                   <div className="perk-list__title">GoFresh Playbook Preview:</div>
                   <iframe src="https://drive.google.com/file/d/1xn3kB3k8hFXmYx9MuybiUc4bKa7Dvjz6/preview" />
                 </div>
               <div>Questions? Contact us at support@zonily.com</div>
               </div>
               <div className="preorder-page__right-container">
-                <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
+              <StripeProvider apiKey="pk_live_8ZBOxjftOcLbdSTnPTN8n5d9">
                   <div className="example">
                     <Elements>
                       <CheckoutForm fontSize="16px" />

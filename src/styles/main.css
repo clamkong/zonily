@@ -829,17 +829,22 @@ header .logo {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-header .logo a {
+
+.preorder-logo {
+	padding-top: 20px;
+}
+
+.preorder-logo a {
 	display: block;
-	margin: 0;
-	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
 	border: none;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
 	width: 60px;
 	height: 60px;
-	background: url("../images/zonily-logo-panda-only-no-circle-compressed.png") no-repeat center;
+	background: url("../images/zonily-logo-with-label.png") no-repeat center;
 	background-size: 60px 60px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -2562,6 +2567,16 @@ footer ul li {
 	background-color: #14181E;
 }
 
+.preorder-page .logo{
+	height: 10%;
+	text-align: center;
+}
+
+.preorder-page .logo img{
+	height: 100%;
+	padding-top: 20px;
+}
+
 .preorder-page .icon-video {
 	font-size: 20rem;
 	color: white;
@@ -2570,7 +2585,7 @@ footer ul li {
 .preorder-page-container {
 	position: absolute;
 	width: 100%;
-	top: 10%;
+	top: 15%;
 	background-color: #14181E;
 	padding-bottom: 40px;
 }
@@ -2580,11 +2595,18 @@ footer ul li {
 }
 
 .preorder-page__left-container {
-	margin-top: 200px;
 	float: left;
 	width: 55%;
 	text-align: center;
 	padding: 0px 75px;
+}
+
+.preorder-page__left-container .perk-list ul{
+	list-style: none;
+}
+
+.preorder-page__left-container .perk-list__title{
+	color: white;
 }
 
 .preorder-page__right-container {

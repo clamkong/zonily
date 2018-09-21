@@ -89,7 +89,7 @@ class CheckoutForm extends Component {
             className="StripeElement StripeElement--empty stripe-input"
             id="playbook"
             type="text"
-            placeholder="Bobabia or Go Fresh"
+            placeholder="Bobabia and/or Go Fresh"
           required />
         </label>
         <label>

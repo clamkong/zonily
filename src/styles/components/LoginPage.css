@@ -1,0 +1,41 @@
+.login-page {
+    height: 100%;
+    display: flex;
+    background: url("../../images/restaurant-4.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.login-page .login-page-tile {
+  background-color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto auto auto auto;
+}
+
+.login-page .container {
+    margin: 25px 25px 25px 25px;
+}
+
+.login-page .container .login-page-title{
+    text-align: center;
+}
+
+.login-page .container .login-page-form {
+    text-align: center;
+}
+
+.login-page .container .login-page-form #login-page-form__email{
+    width: 100%;
+}
+
+.login-page .container .login-page-form #login-page-form__password{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.login-page .container .login-page-form #login-page-form__forgot-password{
+    text-align: right;
+    font-size: 1.3rem;
+}

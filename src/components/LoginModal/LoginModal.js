@@ -25,9 +25,9 @@ class LoginModal extends React.Component {
 
   onLogin() {
     console.log("loggin in!");
-    console.log(this.props.store.user);
+
     this.props.store.loginUser();
-    console.log(this.props.store.user);
+    this.props.handleModalClose();
     this.props.history.push("/");
   }
 

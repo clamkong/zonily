@@ -17,6 +17,10 @@ export default class Header extends React.Component {
 
   handleLoginModalClose() {
     this.setState({ isLoginModalOpen: false });
+    //weird hack to get body to be scrollable again. 
+    //Overflow hidden is applied when dialog open to prevent body background to scroll
+    //this workaround is found in react-modal issues.
+    document.body.removeAttribute("style");
   }
 
   handleSignupModalOpen() {
@@ -25,6 +29,7 @@ export default class Header extends React.Component {
 
   handleSignupModalClose() {
     this.setState({ isSignupModalOpen: false });
+    document.body.removeAttribute("style");
   }
 
   render() {

@@ -9,9 +9,11 @@ import ContactUsSection from './splashComponents/ContactUsSection';
 import FAQSection from './splashComponents/FAQSection';
 import Footer from './splashComponents/Footer';
 
+import "semantic-ui-css/semantic.min.css";
 import "../../styles/base.css";
 import "../../styles/main.css";
 import "../../styles/vendor.css";
+
 
 
 

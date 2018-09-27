@@ -26,6 +26,7 @@ class BaseModal extends React.Component {
         isOpen={this.props.isOpen}
         onAfterOpen={this.onAfterOpen.bind(this)}
         onRequestClose={this.onRequestClose.bind(this)}
+        shouldReturnFocusAfterClose={false}
       >
         <div className="base-modal-content">
           <a

@@ -7,39 +7,39 @@ import PathwaterLogo from "../../images/PathwaterLogo.svg";
 import CoreFoodsLogo from "../../images/CoreFoodsLogo.png";
 import PainaLogo from "../../images/PainaLogo.png";
 
-const playbooks = [
+const allPlaybooks = [
   {
-    id: 0,
+    id: 1,
     name: "Farmhouse Thai",
     description: "lorem",
     image: FarmhouseThaiLogo
   },
   {
-    id: 1,
+    id: 11,
     name: "Les Gourmand",
     description: "lorem",
     image: LesGourmandLogo
   },
   {
-    id: 2,
+    id: 21,
     name: "GoFresh",
     description: "lorem",
     image: GoFreshLogo
   },
   {
-    id: 3,
+    id: 31,
     name: "Bobabia",
     description: "lorem",
     image: BobabiaLogo
   },
   {
-    id: 4,
+    id: 41,
     name: "Nana Joes",
     description: "lorem",
     image: NanaJoesLogo
   },
   {
-    id: 5,
+    id: 51,
     name: "Pathwater",
     description: "lorem",
     image: PathwaterLogo
@@ -58,4 +58,4 @@ const playbooks = [
   }
 ];
 
-export default playbooks;
+export default allPlaybooks;

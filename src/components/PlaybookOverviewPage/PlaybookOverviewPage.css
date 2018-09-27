@@ -1,0 +1,61 @@
+.playbook-overview {
+
+}
+
+.playbook-overview .playbook-overview-content-top{
+    display: flex;
+}
+
+.playbook-overview-hero{
+    border-right: solid black 5px;
+    border-bottom: solid black 5px;
+    width: calc(100% - 275px);
+    height: 555px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1E1E1E;
+    padding: 30px 30px 30px 30px;
+}
+
+.playbook-overview-hero .hero-container{
+    color: #f3f3f3;
+}
+
+.playbook-overview-hero .hero-container h1{
+    color: #f3f3f3;
+}
+
+.playbook-overview-outline{
+    border: solid black 1px;
+    width: 275px;
+    background: black;
+}
+
+.playbook-overview .playbook-overview-content-bottom{
+    display: flex;
+    background: #1E1E1E;
+    color: #f3f3f3;
+    padding: 40px 40px 40px 40px;
+}
+
+.playbook-overview .playbook-overview-content-bottom h3{
+    color: #f3f3f3;
+}
+
+.playbook-overview-course-info{
+    border: solid black 1px;
+    width: 25%;
+}
+
+.playbook-overview-course-description{
+    border: solid black 1px;
+    width: 75%;
+}
+
+.outline-row {
+    border: solid black 1px;
+    padding: 18px 18px 18px 18px;
+    margin-top: 5px;
+    background: #1E1E1E;
+    color: #f3f3f3;
+}

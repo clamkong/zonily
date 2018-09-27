@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'semantic-ui-react';
 
-import playbooks from '../../data/mock/playbooks';
+import playbooks from '../../data/mock/allPlaybooks';
 import CartItem from './CartItem';
 
 import "./MyCartPage.css";

@@ -3,7 +3,7 @@ import { subscribe } from "react-contextual";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import MarketplacePage from "../components/MarketplacePage/MarketplacePage";
 import AboutPage from "../components/AboutPage/AboutPage";
-import PlaybookDetailsPage from "../components/PlaybookDetailsPage/PlaybookDetailsPage";
+import PlaybookOverviewPage from "../components/PlaybookOverviewPage/PlaybookOverviewPage";
 import AuthorDetails from "../components/AuthorDetails/AuthorDetails";
 import MyPlaybooksPage from "../components/MyPlaybooksPage/MyPlaybooksPage";
 import MyCartPage from "../components/MyCartPage/MyCartPage";
@@ -29,7 +29,7 @@ const AppRouter = subscribe()(({ user }) => {
               <Route path="/cart" component={MyCartPage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/sandbox" component={AuthorDetails} />
-              <Route path="/playbook/:pId" component={PlaybookDetailsPage} />
+              <Route path="/playbook/:pId" component={PlaybookOverviewPage} />
               <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>
           </div>

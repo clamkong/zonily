@@ -33,7 +33,7 @@ class PlaybookPage extends React.Component {
             <div className="master-panel--content">
               {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
                 (el, i) => {
-                  return <div className="chapter-row">{`Chapter ${i}`}</div>;
+                  return <div key={i} className="chapter-row">{`Chapter ${i}`}</div>;
                 }
               )}
             </div>

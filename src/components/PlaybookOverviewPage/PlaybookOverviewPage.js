@@ -3,6 +3,7 @@ import AuthorDetails from "../AuthorDetails/AuthorDetails";
 import ShoppingTile from "./ShoppingTile";
 import "./PlaybookOverviewPage.css";
 import allPlaybooks from "../../data/mock/allPlaybooks";
+import { Link } from "react-router-dom";
 
 export default class PlaybookDetailsPage extends React.Component {
   constructor(props) {
@@ -23,21 +24,22 @@ export default class PlaybookDetailsPage extends React.Component {
   }
 
   render() {
-    return (
-      <div className="playbook-overview">
-        <div className="playbook-overview-content">
-          <div className="playbook-overview-content-top">
-            <div className="playbook-overview-hero">
+    return <div className="playbook-overview-page app-page">
+        <div className="playbook-overview-page-content">
+          <div className="playbook-overview-page-content-top">
+            <div className="playbook-overview-page-hero">
               <div className="hero-container">
                 <h1>{this.playbook.name}</h1>
                 <p>Description of {this.playbook.name}</p>
               </div>
             </div>
-            <div className="playbook-overview-right-panel">
+            <div className="playbook-overview-page-right-panel">
               <div className="action-tile">
-                <button>Go to Playbook</button>
+                <Link to={`/playbook/${this.playbook.id}/chapter/0`}>
+                  <button>Go to Playbook</button>
+                </Link>
               </div>
-              <div className="playbook-overview-outline">
+              <div className="playbook-overview-page-outline">
                 <div className="outline-row">Chapter</div>
                 <div className="outline-row">Chapter</div>
                 <div className="outline-row">Chapter</div>
@@ -46,22 +48,21 @@ export default class PlaybookDetailsPage extends React.Component {
               </div>
             </div>
           </div>
-          <div className="playbook-overview-content-bottom">
-            <div className="playbook-overview-course-info">
+          <div className="playbook-overview-page-content-bottom">
+            <div className="playbook-overview-page-course-info">
               <h3>Playbook Info</h3>
             </div>
-            <div className="playbook-overview-course-description">
+            <div className="playbook-overview-page-course-description">
               <h3>What you'll learn</h3>
               <p>lorum ipsum</p>
             </div>
           </div>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 
-// <div className="playbook-overview-content">
+// <div className="playbook-overview-page-content">
 //     <div className="playbook-title-info">
 //         <h1>Playbook Title: {this.playbook.name}</h1>
 //         <h3>Playbook gist</h3>

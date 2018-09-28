@@ -20,6 +20,7 @@ body {
 
 .main-app {
   /* background-color: #1E1E1E; */
+  height: 100%;
 }
 
 #root {
@@ -28,4 +29,9 @@ body {
 
 .App {
   height: 100%;
+}
+
+.app-page{
+  height: calc(100% - 90px);
+  background: black;
 }

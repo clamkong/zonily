@@ -10,15 +10,14 @@ import MyCartPage from "../components/MyCartPage/MyCartPage";
 import Splash from "../components/SplashPage/Splash";
 import Preorder from "../components/PreorderPage/PreorderPage";
 import PrivacyPolicyPage from "../components/PrivacyPolicyPage/PrivacyPolicyPage";
-import Header from '../components/Header/Header';
+import Header from "../components/Header/Header";
+import PlaybookPage from '../components/PlaybookPage/PlaybookPage';
 
 const AppRouter = subscribe()(({ user }) => {
   console.log(user);
-  return (
-    <BrowserRouter>
+  return <BrowserRouter>
       <div className="App">
-        {user.isAuthenticated ? (
-          <div className="main-app">
+        {user.isAuthenticated ? <div className="main-app">
             <Header />
             <Switch>
               <Route path="/" component={MarketplacePage} exact={true} />
@@ -29,21 +28,19 @@ const AppRouter = subscribe()(({ user }) => {
               <Route path="/cart" component={MyCartPage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/sandbox" component={AuthorDetails} />
+              <Route path="/playbook/:pId/chapter/:cid" component={PlaybookPage} />
+              <Route path="/playbook/:pId/chapter" component={PlaybookOverviewPage} />
               <Route path="/playbook/:pId" component={PlaybookOverviewPage} />
               <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>
-          </div>
-        ) : (
-          <Switch>
+          </div> : <Switch>
             <Route path="/" component={Splash} exact={true} />
             <Route path="/privacy" component={PrivacyPolicyPage} />
             <Route path="/preorder" component={Preorder} />
             <Route path="*" render={() => <Redirect to="/" />} />
-          </Switch>
-        )}
+          </Switch>}
       </div>
-    </BrowserRouter>
-  );
+    </BrowserRouter>;
 });
 
 export default AppRouter;

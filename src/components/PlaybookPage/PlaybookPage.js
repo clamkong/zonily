@@ -45,9 +45,8 @@ class PlaybookPage extends React.Component {
               {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
                 (el, i) => {
                   return (
-                    <Link to={`/playbook/:pid/chapter/${i}`}>
+                    <Link key={i} to={`${this.props.match.url}/${i}`}>
                       <div
-                        key={i}
                         onClick={this.onChapterClick.bind(this, i)}
                         className="chapter-row"
                       >
@@ -57,10 +56,6 @@ class PlaybookPage extends React.Component {
                   );
                 }
               )}
-              <Route
-                path={`/playbook/21/chapter/:cid`}
-                component={TextComponent}
-              />
             </div>
           </div>
           <div className="content-panel">
@@ -72,7 +67,10 @@ class PlaybookPage extends React.Component {
               </h2>
             </div>
             <div className="content-panel--content">
-              Chapter Content will go here
+              <Route
+                path={`${this.props.match.path}/:cid`}
+                component={TextComponent}
+              />
             </div>
           </div>
           <div className="details-panel">

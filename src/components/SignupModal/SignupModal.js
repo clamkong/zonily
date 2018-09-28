@@ -30,12 +30,12 @@ class SignupModal extends React.Component {
             />
             <p id="signup-container-form__privacy-terms">
               By creating an account, you agree to our
-              <a class="info-links" href="/privacy">
+              <a className="info-links" href="/privacy">
                 {" "}
                 Privacy Policy
               </a>{" "}
               and{" "}
-              <a class="info-links" href="/terms">
+              <a className="info-links" href="/terms">
                 Terms of Service.{" "}
               </a>
             </p>

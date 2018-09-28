@@ -33,12 +33,17 @@ export default class PlaybookDetailsPage extends React.Component {
                 <p>Description of {this.playbook.name}</p>
               </div>
             </div>
-            <div className="playbook-overview-outline">
-              <div className="outline-row">Chapter</div>
-              <div className="outline-row">Chapter</div>
-              <div className="outline-row">Chapter</div>
-              <div className="outline-row">Chapter</div>
-              <div className="outline-row">Chapter</div>
+            <div className="playbook-overview-right-panel">
+              <div className="action-tile">
+                <button>Go to Playbook</button>
+              </div>
+              <div className="playbook-overview-outline">
+                <div className="outline-row">Chapter</div>
+                <div className="outline-row">Chapter</div>
+                <div className="outline-row">Chapter</div>
+                <div className="outline-row">Chapter</div>
+                <div className="outline-row">Chapter</div>
+              </div>
             </div>
           </div>
           <div className="playbook-overview-content-bottom">

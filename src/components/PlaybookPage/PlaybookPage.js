@@ -2,6 +2,9 @@ import React from "react";
 import allPlaybooks from "../../data/mock/allPlaybooks";
 import { Input } from "semantic-ui-react";
 import "./PlaybookPage.css";
+import { Route } from "react-router-dom";
+import TextComponent from "./PlaybookPageContentComponents/TextComponent";
+import Link from "react-router-dom/Link";
 
 class PlaybookPage extends React.Component {
   constructor(props) {
@@ -15,6 +18,14 @@ class PlaybookPage extends React.Component {
         break;
       }
     }
+
+    this.state = {
+      currentChapter: 0
+    };
+  }
+
+  onChapterClick(chapter) {
+    this.setState({ currentChapter: chapter });
   }
 
   render() {
@@ -33,17 +44,33 @@ class PlaybookPage extends React.Component {
             <div className="master-panel--content">
               {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
                 (el, i) => {
-                  return <div key={i} className="chapter-row">{`Chapter ${i}`}</div>;
+                  return (
+                    <Link key={i} to={`${this.props.match.url}/${i}`}>
+                      <div
+                        onClick={this.onChapterClick.bind(this, i)}
+                        className="chapter-row"
+                      >
+                        {i == 0 ? "Introduction" : `Chapter ${i}`}
+                      </div>
+                    </Link>
+                  );
                 }
               )}
             </div>
           </div>
           <div className="content-panel">
             <div className="content-panel--header">
-              <h2>Chapter Title: Subtitle</h2>
+              <h2>
+                {this.state.currentChapter == 0
+                  ? "Introduction"
+                  : `Chapter ${this.state.currentChapter} : Subtitle`}
+              </h2>
             </div>
             <div className="content-panel--content">
-              Chapter Content will go here
+              <Route
+                path={`${this.props.match.path}/:cid`}
+                component={TextComponent}
+              />
             </div>
           </div>
           <div className="details-panel">

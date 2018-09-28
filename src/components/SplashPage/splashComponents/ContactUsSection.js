@@ -15,7 +15,7 @@ export default class ContactUsSection extends React.Component {
     //axios calls form submit
     console.log(`Submitting email ${e.target[0].value}`);
 
-    const baseURL = "http://zonily-api.herokuapp.com";
+    const baseURL = "https://zonily-api.herokuapp.com";
     const endpoint = "/contact/message/";
     const query =
       "?email=" +

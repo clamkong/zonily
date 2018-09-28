@@ -1,6 +1,6 @@
 import React from "react";
 import BaseModal from "../BaseModal/BaseModal";
-import "../../styles/components/SignupModal.css";
+import "./SignupModal.css";
 
 class SignupModal extends React.Component {
   render() {

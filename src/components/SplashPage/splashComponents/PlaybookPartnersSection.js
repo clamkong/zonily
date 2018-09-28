@@ -2,6 +2,11 @@ import React from "react";
 
 import avatar1 from "../../../images/avatars/avatar-1.jpg";
 import avatar2 from "../../../images/avatars/avatar-2.jpg";
+import FarmhouseThaiLogo from "../../../images/FarmhouseThaiLogo.gif";
+import LesGourmandLogo from "../../../images/LesGourmandLogo.jpg";
+import GoFreshLogo from "../../../images/GoFreshLogo.png";
+import BobabiaLogo from "../../../images/BobabiaLogo.png";
+import NanaJoesLogo from "../../../images/NanaJoesLogo.png";
 
 const PlaybookPartnersSection = () => {
   return (
@@ -17,83 +22,70 @@ const PlaybookPartnersSection = () => {
           <ul className="slides">
             <li>
               <div className="testimonial-author">
-                <img src={avatar1} alt="Author image" />
+                <div className="author-image-container">
+                  <img src={BobabiaLogo} alt="Author image" />
+                </div>
                 <div className="author-info">
                   Bobabia
+                  <span>San Mateo, CA</span>
+                  {""}
                   <span className="position">Victor Win, Owner</span>
                 </div>
               </div>
-              <p>
-                Your work is going to fill a large part of your life, and the
-                only way to be truly satisfied is to do what you believe is
-                great work. And the only way to do great work is to love what
-                you do. If you haven't found it yet, keep looking. Don't settle.
-                As with all matters of the heart, you'll know when you find it.
-              </p>
             </li>
             <li>
               <div className="testimonial-author">
-                <img src={avatar2} alt="Author image" />
+                <div className="author-image-container">
+                  <img src={GoFreshLogo} alt="Author image" />
+                </div>
                 <div className="author-info">
                   GoFresh
-                  <span>Billy, Founder and CEO</span>
+                  <span>Modesto, CA - Turlock, CA - Pleasanton, CA</span>
+                  {""}
+                  <span>Billy Anderson, Founder and CEO</span>
                 </div>
               </div>
-              <p>
-                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                amet mauris.
-              </p>
             </li>
             <li>
               <div className="author-container">
                 <div className="testimonial-author">
-                  <img src={avatar2} alt="Author image" />
+                  <div className="author-image-container">
+                    <img src={FarmhouseThaiLogo} alt="Author image" />
+                  </div>
                   <div className="author-info">
                     Farmhouse Thai
-                    <span>Pop, Founder, Head Chef</span>
+                    <span>San Francisco, CA - Oakland, CA - Portland, OR</span>
+                    {""}
+                    <span>Kasem Saengsawang, Founder, Owner and Head Chef</span>
                   </div>
                 </div>
-                <p>
-                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
-                  sit amet mauris.
-                </p>
-                <div className="testimonial-author">
-                  <img src={avatar2} alt="Author image" />
-                  <div className="author-info">
-                    Farmhouse Thai
-                    <span>Pop, Founder, Head Chef</span>
-                  </div>
-                </div>
-                <p>
-                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
-                  sit amet mauris.
-                </p>
               </div>
             </li>
             <li>
               <div className="testimonial-author">
-                <img src={avatar2} alt="Author image" />
+                <div className="author-image-container">
+                  <img src={LesGourmandLogo} alt="Author image" />
+                </div>
                 <div className="author-info">
                   Les Gourmand
-                  <span>Silvian, Founder and Owner</span>
+                  <span>San Francisco, CA</span>
+                  {""}
+                  <span>Sylvain Chaillout, Founder and Owner</span>
                 </div>
               </div>
-              <p>
-                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                amet mauris.
-              </p>
+            </li>
+            <li>
+              <div className="testimonial-author">
+                <div className="author-image-container">
+                  <img src={NanaJoesLogo} alt="Author image" />
+                </div>
+                <div className="author-info">
+                  Nana Joes
+                  <span>San Francisco, CA</span>
+                  {""}
+                  <span>Michelle Pusateri, Founder and Owner</span>
+                </div>
+              </div>
             </li>
           </ul>
         </div>

@@ -4,6 +4,8 @@ import {Input } from 'semantic-ui-react';
 import playbooksData from '../../data/mock/allPlaybooks';
 import PlaybookCardsContainer from '../PlaybookCardsContainer/PlaybookCardsContainer';
 
+import "./MarketplacePage.css";
+
 
 export default class MarketplacePage extends React.Component {
     constructor(props){

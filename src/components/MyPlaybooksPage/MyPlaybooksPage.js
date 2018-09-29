@@ -3,7 +3,7 @@ import {Input } from 'semantic-ui-react';
 
 import PlaybookCardsContainer from '../PlaybookCardsContainer/PlaybookCardsContainer';
 import myPlaybooksData from '../../data/mock/myPlaybooks';
-
+import "./MyPlaybooksPage.css";
 
 export default class MyPlaybooksPage extends React.Component {
     constructor(props) {

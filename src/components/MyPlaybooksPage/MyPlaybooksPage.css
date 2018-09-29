@@ -1,0 +1,9 @@
+.my-playbooks-page .search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.my-playbooks-page .search-bar input{
+  width: 500px;
+}

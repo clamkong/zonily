@@ -1922,7 +1922,7 @@ a.menu-toggle {
 }
 
 #testimonial-slider .testimonial-author .author-image-container {
-	width: 50rem;
+	width: 100%;
 	height: 25rem;
 	margin:auto;
 }

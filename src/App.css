@@ -26,3 +26,12 @@ body {
   height: calc(100% - 70px);
   background: black;
 }
+
+.grid-container {
+  width: 100%;
+}
+.grid {
+  float: left;
+  width: 50%;
+  text-align: center;
+}

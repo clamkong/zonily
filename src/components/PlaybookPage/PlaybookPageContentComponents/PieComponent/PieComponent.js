@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  PieChart,
-  Pie,
-  Cell,
-  ResponsiveContainer,
-  Label,
-  LabelList
-} from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 import "./PieComponent.css";
 /**
@@ -15,8 +8,8 @@ import "./PieComponent.css";
 class PieComponent extends React.Component {
   onSliceClicked(props) {
     console.log(props);
-    console.log(`Slice ${props.payload.name} selected`)
-    this.props.onSliceClicked(props.payload.id);
+    console.log(`Slice ${props.payload.name} selected`);
+    this.props.onSliceClicked && this.props.onSliceClicked(props.payload.id);
   }
   render() {
     const data = [
@@ -70,7 +63,7 @@ class PieComponent extends React.Component {
               dataKey="value"
               label={renderCustomizedLabel}
               outerRadius="80%"
-              onClick={this.onSliceClicked}
+              onClick={this.onSliceClicked.bind(this)}
             >
               {data.map((entry, index) => (
                 <Cell key={index} fill={COLORS[index]} />

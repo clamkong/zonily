@@ -5,8 +5,10 @@ export default class FlowNode extends React.Component {
   render() {
     return (
       <div className="flow-node">
-        {`${this.props.name}`}
-        {this.props.num == this.props.maxLength - 1 ? "" : "--->"}
+        <div className="flow-node__content">{`${this.props.name}`}</div>
+        <div className="flow-node__edge">
+          {this.props.num == this.props.maxLength - 1 ? "" : "--->"}
+        </div>
       </div>
     );
   }

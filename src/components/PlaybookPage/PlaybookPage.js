@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import TextComponent from "./PlaybookPageContentComponents/TextComponent";
 import Link from "react-router-dom/Link";
 import GridContainer from '../Grid/GridContainer'
+import StackContainer from '../Stack/StackContainer'
 
 class PlaybookPage extends React.Component {
   constructor(props) {
@@ -70,7 +71,7 @@ class PlaybookPage extends React.Component {
             <div className="content-panel--content">
               <Route
                 path={`${this.props.match.path}/:cid`}
-                component={GridContainer}
+                component={StackContainer}
               />
             </div>
           </div>

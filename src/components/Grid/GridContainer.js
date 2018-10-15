@@ -7,7 +7,9 @@ export default class GridContainer extends React.Component {
     super(props)
     this.state = {
       data: null,
-      gridData: null
+      gridData: null,
+      showDetails: false,
+      gridDetails: null
     }
   }
 
@@ -20,6 +22,10 @@ export default class GridContainer extends React.Component {
     this.setState({ data: payload, gridData: gridData })
   }
 
+  handleGridClick(details){
+    this.setState({ showDetails: true, gridDetails: details })
+  }
+
   gridContainerConstructor(){
     if (this.state.data === null){
       return <div>No grid data provided</div>
@@ -30,7 +36,8 @@ export default class GridContainer extends React.Component {
 
   boxConstructor(gridData){
     return gridData.map(grid => {
-      return <Grid grid={grid}/>
+      return <Grid grid={grid}
+                   handleGridClick={this.handleGridClick.bind(this)} />
     })
   }
 
@@ -38,6 +45,7 @@ export default class GridContainer extends React.Component {
     return (
       <div className="grid-container">
         { this.gridContainerConstructor() }
+        { this.state.showDetails ? <div className='grid-details'>{this.state.gridDetails}</div> : null}
       </div>
     )
   }

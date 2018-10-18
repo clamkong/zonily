@@ -1,0 +1,17 @@
+.flow-node{
+    /* border: solid 1px black; */
+    background-color: white;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.flow-node__content{
+    border: solid 1px black;
+    width: 150px;
+    height: 100px;
+}
+
+.flow-node__edge{
+    margin-top: auto;
+    margin-bottom: auto;
+}

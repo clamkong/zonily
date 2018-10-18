@@ -66,7 +66,7 @@ export default class ContactUsSection extends React.Component {
                 type="text"
                 name="dName"
                 className="email"
-                id="mc-name"
+                id="name"
                 placeholder="Name (Required)"
                 required="true"
               />
@@ -74,13 +74,13 @@ export default class ContactUsSection extends React.Component {
                 type="email"
                 name="dEmail"
                 className="email"
-                id="mc-email"
+                id="email"
                 placeholder="Email (Required)"
                 required="true"
               />
               <textarea
-                className="email"
-                id="mc-message"
+                className="message"
+                id="message"
                 placeholder="Message (Optional)"
               />
               <button className="stroke" type="submit" name="subscribe">

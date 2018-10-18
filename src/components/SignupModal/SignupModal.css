@@ -1,0 +1,66 @@
+.signup-container .signup-container-tile {
+  background-color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto auto auto auto;
+}
+
+.signup-container {
+  margin: 25px 25px 25px 25px;
+}
+
+.signup-container .signup-container-title {
+  text-align: center;
+}
+
+.signup-container .signup-container-form {
+  text-align: center;
+}
+
+.signup-container .signup-container-form #signup-container-form__email {
+  width: 100%;
+}
+
+.signup-container .signup-container-form #signup-container-form__password {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.signup-container .signup-container-form #signup-container-form__privacy-terms {
+  font-size: 1.3rem;
+  max-width: 270px;
+  margin: 6px auto 18px;
+}
+
+.signup-container .signup-container-form #signup-container-form__submit {
+  margin-bottom: 0.8rem;
+}
+
+.signup-container .or {
+  position: relative;
+  margin: 0 0 0.4em;
+  text-align: center;
+  color: rgba(77, 87, 104, 0.8);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.signup-container .or span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em 1em;
+  background: #fff;
+}
+
+.signup-container .or:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(77, 87, 104, 0.2);
+  z-index: -1;
+}

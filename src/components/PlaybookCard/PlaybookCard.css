@@ -2,4 +2,37 @@
   height: 287px;
   width: 284px;
   text-align: center;
+  background-color: white;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+    0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  margin: 10px 10px 10px 10px;
+}
+
+.playbook-card:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+}
+
+.playbook-card .playbook-card-image {
+  height: 140px;
+  /* background-color: black; */
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+}
+.playbook-card .playbook-card-image img {
+  width: auto;
+  max-height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.playbook-card .playbook-card-content {
+  background-color: black;
+  height: calc(100% - 140px);
+}
+
+.playbook-card .playbook-card-content h2 {
+  color: white;
+  padding-top: 10px;
 }

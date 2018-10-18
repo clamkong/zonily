@@ -451,6 +451,7 @@ textarea {
 	.row {
 		padding-left: 30px;
 		padding-right: 30px;
+		padding-top: 40px;
 	}
 	.row .row {
 		padding-left: 0;

@@ -1,17 +1,30 @@
-import React from 'react';
-import { Card } from 'semantic-ui-react'
-import "./PlaybookCard.css"
+import React from "react";
+import { withRouter, NavLink } from "react-router-dom";
+import "./PlaybookCard.css";
 
-const PlaybookCard = ({ name, id }) => (
-    <Card
-        href={`/playbook/${id}`}
-        className="playbook-card"
-    >
-        <Card.Content>
-            <Card.Header>{name}</Card.Header>
-            <Card.Description>Description of Playbook {name}</Card.Description>
-        </Card.Content>
-    </Card>
-)
+const PlaybookCard = ({ name, id, image, history }) => {
+  // const pid = id;
+  // const onClick = function(){
+  //   return function(){
+  //     history.push(`/playbook/${pid}`);
+  //   }
+  // };
 
-export default PlaybookCard;
+  return (
+    <div className="playbook-card">
+      <NavLink to={`/playbook/${id}`}>
+        <div className="playbook-card-image">
+          <img src={image} />
+        </div>
+        <div className="playbook-card-content">
+          <h2>{name}</h2>
+          <div className="playbook-card__description">
+            Description of Playbook {name}
+          </div>
+        </div>
+      </NavLink>
+    </div>
+  );
+};
+
+export default withRouter(PlaybookCard);

@@ -1,0 +1,67 @@
+
+.login-container .login-container-tile {
+  background-color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto auto auto auto;
+}
+
+.login-container {
+  margin: 25px 25px 25px 25px;
+}
+
+.login-container .login-container-title {
+  text-align: center;
+}
+
+.login-container .login-container-form {
+  text-align: center;
+}
+
+.login-container .login-container-form #login-container-form__email {
+  width: 100%;
+}
+
+.login-container .login-container-form #login-container-form__password {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.login-container .login-container-form #login-container-form__forgot-password {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.login-container .login-container-form #login-container-form__submit{
+    margin-bottom: .8rem;
+}
+
+.login-container .or {
+  position: relative;
+  margin: 0 0 0.4em;
+  text-align: center;
+  color: rgba(77, 87, 104, 0.8);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.login-container .or span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em 1em;
+  background: #fff;
+}
+
+.login-container .or:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(77, 87, 104, 0.2);
+  z-index: -1;
+}

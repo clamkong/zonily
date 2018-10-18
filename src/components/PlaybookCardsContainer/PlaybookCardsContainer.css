@@ -1,0 +1,12 @@
+.cards-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cards-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 1250px;
+}

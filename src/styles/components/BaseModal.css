@@ -1,0 +1,36 @@
+.base-modal {
+  position: absolute;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+}
+
+.base-modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+
+.base-modal-content .base-modal-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  background: url("https://d2y1uetpctfe4a.cloudfront.net/mc-fe-styles/0.2.48/global/modal-close.svg")
+    center no-repeat;
+  opacity: 0.2;
+  z-index: 1;
+  transition: opacity 150ms ease;
+}

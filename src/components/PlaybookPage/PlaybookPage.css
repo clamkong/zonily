@@ -10,6 +10,7 @@
 .playbook-page .playbook-page-content .master-panel {
   background-color: black;
   border-left: 10px solid black;
+  border-right: 5px solid black;
   border-bottom: 15px solid black;
   min-width: 300px;
   display: flex;
@@ -38,10 +39,44 @@
 }
 
 .chapter-row {
-  padding: 18px 18px 18px 18px;
   margin-bottom: 5px;
   background: #1e1e1e;
   color: #f3f3f3;
+}
+
+.chapter-row .chapter-row__title {
+  height: 50px;
+}
+
+.chapter-row .chapter-row__title div {
+  padding-top: 10px;
+}
+
+.section-row {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+.section-row .section-row__title {
+  border-top: 1px solid white;
+  border-bottom: 1px white solid;
+  height: 50px;
+}
+
+.section-row .section-row__title div {
+  margin-top: 10px;
+}
+
+.subchapter-row {
+  color: #f3f3f3;
+  background: black;
+  font-family: "raleway-bold", sans-serif;
+  text-align: left;
+}
+
+.subchapter-row .subchapter-row__title {
+  font-size: 1.4rem;
+  margin-left: 80px;
 }
 
 .playbook-page .playbook-page-content .content-panel .content-panel--header {

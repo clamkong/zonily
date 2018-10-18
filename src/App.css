@@ -26,3 +26,34 @@ body {
   height: calc(100% - 70px);
   background: black;
 }
+
+.grid-container {
+  width: 100%;
+}
+.grid {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.grid-details {
+  margin: 100px;
+  text-align: center;
+}
+
+.stack-container {
+  .width: 100%;
+}
+.stack {
+  margin: 20px;
+  border: 2px solid white;
+}
+.stack-title {
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
+  margin: 10px;
+}
+.stack-info {
+  margin: 0px 20px;
+  margin-top: 10px;
+}

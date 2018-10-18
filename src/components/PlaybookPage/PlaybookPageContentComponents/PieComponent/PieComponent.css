@@ -1,0 +1,6 @@
+.pie-component {
+    background-color: white;
+}
+.pie-component g.recharts-layer.recharts-pie-sector {
+    cursor: pointer;
+}

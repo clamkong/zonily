@@ -98,6 +98,6 @@ export const fetchGridDetails = (id, callback) => {
 }
 
 export const fetchStackDetails = (id, callback) => {
-  debugger;
+  // debugger;
   callback(sampleStackPayload)
 }

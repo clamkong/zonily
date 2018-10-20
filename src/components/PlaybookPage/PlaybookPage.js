@@ -9,6 +9,7 @@ import Link from "react-router-dom/Link";
 // import PieComponent from "./PlaybookPageContentComponents/PieComponent/PieComponent";
 import FarmhousePlaybook from "../../data/Farmhouse/MasterPayload";
 import ContentComponentManager from "../../util/ContentComponentManager";
+import SectionRow from "./SectionRow";
 
 class PlaybookPage extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class PlaybookPage extends React.Component {
     this.setState({ currentChapter: chapter });
   }
 
-  onSubChapterClick(subchapter){
+  onSubChapterClick(subchapter) {
     this.setState({ currentSubchapter: subchapter });
   }
 
@@ -44,51 +45,38 @@ class PlaybookPage extends React.Component {
   }
 
   render() {
-    return <div className="playbook-page app-page">
+    return (
+      <div className="playbook-page app-page">
         <div className="playbook-page-content">
           <div className="master-panel">
             <div className="master-panel--header">
-              <Input fluid className="playbook-page-content-search" icon="search" placeholder="Search for Playbook Content" />
+              <Input
+                fluid
+                className="playbook-page-content-search"
+                icon="search"
+                placeholder="Search for Playbook Content"
+              />
             </div>
             <div className="master-panel--content">
               {FarmhousePlaybook.sections.map(section => {
-                return <div className="section-row">
-                    <div className="section-row__title">
-                      <div>{section.sectionTitle}</div>
-                    </div>
-                    {section.chapters.map(chapter => {
-                      return <div className="chapter-row">
-                          <div className="chapter-row__title">
-                            <div>{chapter.title}</div>
-                          </div>
-                          {chapter.subChapters.map(subChapter => {
-                            return <div className="subchapter-row">
-                                <Link key={subChapter.subChapterId} to={`${this.props.match.url}/${subChapter.subChapterId}`}>
-                                  <div onClick={this.onSubChapterClick.bind(this, subChapter)} className="subchapter-row__title">
-                                    {subChapter.title}
-                                  </div>
-                                </Link>
-                              </div>;
-                          })}
-                        </div>;
-                    })}
-                  </div>;
+                return <SectionRow key={section.sectionId} />;
               })}
             </div>
           </div>
           <div className="content-panel">
             <div className="content-panel--header">
-              <h2>
-                {this.state.currentSubchapter.title}
-              </h2>
+              <h2>{this.state.currentSubchapter.title}</h2>
             </div>
             <div className="content-panel--content">
-              <Route path={`${this.props.match.path}/:cid`} render={() => {
+              <Route
+                path={`${this.props.match.path}/:cid`}
+                render={() => {
                   const manager = new ContentComponentManager(); //prob don't need this as instance
                   return manager.getComponent(this.state.currentSubchapter);
                   // return <FlowComponent onSliceClicked={this.onContentSelect.bind(this)} />;
                   // return "content panel";
-                }} />
+                }}
+              />
             </div>
           </div>
           <div className="details-panel">
@@ -98,7 +86,8 @@ class PlaybookPage extends React.Component {
             <div className="details-panel--content">{"Heylo"}</div>
           </div>
         </div>
-      </div>;
+      </div>
+    );
   }
 }
 

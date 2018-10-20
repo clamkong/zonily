@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchGridDetails } from '../ajax'
+import { fetchGridDetails } from '../../../../data/Farmhouse/ajax';
 import Grid from './Grid'
 
 export default class GridContainer extends React.Component {

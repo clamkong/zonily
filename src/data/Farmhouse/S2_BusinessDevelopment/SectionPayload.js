@@ -37,6 +37,42 @@ const payload = {
           data: []
         }
       ]
+    },
+    {
+      chapterId: 2,
+      title: "Real Estate",
+      subChapters: [
+        {
+          subChapterId: 0,
+          title: "Lease, Location, Growth",
+          type: "STACK",
+          data: []
+        }
+      ]
+    },
+    {
+      chapterId: 3,
+      title: "Supply Chain",
+      subChapters: [
+        {
+          subChapterId: 0,
+          title: "Managing Supply Chain",
+          type: "STACK",
+          data: []
+        }
+      ]
+    },
+    {
+      chapterId: 4,
+      title: "Restaurant Concept",
+      subChapters: [
+        {
+          subChapterId: 0,
+          title: "Farmhouse Thai Kitchen Concept",
+          type: "STACK",
+          data: []
+        }
+      ]
     }
   ]
 };

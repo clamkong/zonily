@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchStackDetails } from '../ajax'
+import { fetchStackDetails } from '../../../../data/Farmhouse/ajax';
 import Stack from './Stack'
 
 export default class StackContainer extends React.Component {

@@ -10,4 +10,11 @@
 
 .stack-column .stack-column__title {
     border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.stack-column .stack-column__content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
 }

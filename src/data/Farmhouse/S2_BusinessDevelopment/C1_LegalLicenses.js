@@ -4,13 +4,14 @@ const data = {
   subChapters: [
     {
       subChapterId: 0,
-      title: 'Incorporation $800-1,200 (use the $800, all you need is EIN and Articles of Inc.)',
+      title: 'Incorporation',
       type: "STACK",
       data: [
         {
           id: 0,
           title: 'Type',
           content: [
+            '$800-1,200 (use the $800, all you need is EIN and Articles of Inc.)',
             'C corp – do this if you are selling more than $3 million',
             'Will cover more taxes when you sell',
             'S corp – do this if you will sell for less than $3 million',
@@ -38,13 +39,14 @@ const data = {
     },
     {
       subChapterId: 1,
-      title: 'Bank account and CPA– takes 1 week',
+      title: 'Bank account and CPA',
       type: "STACK",
       data: [
         {
           id: 0,
           title: 'Bank account',
           content: [
+            'takes 1 week',
             'Need to have',
             'Shareholder split',
             'Ein Number',
@@ -64,8 +66,9 @@ const data = {
         },
         {
           id: 1,
-          title: 'CPA (tips and tricks) - $250/hr - $575/hr',
+          title: 'CPA',
           content: [
+            '$250/hr - $575/hr',
             'How to know if you have the right one?',
             'Get a second opinion',
             'Have your own balance sheet',

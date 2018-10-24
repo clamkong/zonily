@@ -40,7 +40,7 @@ class PlaybookPage extends React.Component {
     this.setState({ detailId: id });
   }
 
-  onContentSelected(details, detailTitle) {
+  onContentSelected(details = [], detailTitle) {
     console.log("content selected");
     this.setState({ detailData: details });
     this.setState({ detailTitle: detailTitle });

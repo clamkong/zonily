@@ -1,18 +1,20 @@
 import React from "react";
 import SectionRow from "./SectionRow";
 import { Input } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 class MasterPanel extends React.Component {
   constructor(props) {
     super(props);
     this.sections = props.sections;
+    this.props.match;
   }
-
+  
   render() {
     return (
       <div className="master-panel">
         <div className="master-panel__header">
-          <button>Back to Overview</button>
+          <button><Link className="go-back-link" to={`/playbook/${this.props.match.params.pId}`}>Back to Overview</Link></button>
         </div>
         <div className="master-panel__content">
           {this.sections.map(section => {

@@ -25,6 +25,10 @@
   height: 63px;
 }
 
+.playbook-page .playbook-page-content .master-panel .master-panel__header .go-back-link{
+  color: white;
+}
+
 .playbook-page .playbook-page-content .master-panel .master-panel__content {
   overflow-y: auto;
 }

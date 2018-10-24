@@ -1,13 +1,12 @@
 .flow-node{
     /* border: solid 1px black; */
-    background-color: white;
     display: flex;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 .flow-node__content{
-    border: solid 1px black;
+    border: solid 2px white;
     width: 150px;
     height: 100px;
 }

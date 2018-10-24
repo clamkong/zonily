@@ -18,16 +18,14 @@
   height: 100%;
 }
 
-.playbook-page .playbook-page-content .master-panel .master-panel--header {
+.playbook-page .playbook-page-content .master-panel .master-panel__header {
   border-bottom: 3px solid black;
   background-color: #1e1e1e;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
   text-align: center;
+  height: 63px;
 }
 
-.playbook-page .playbook-page-content .master-panel .master-panel--content {
+.playbook-page .playbook-page-content .master-panel .master-panel__content {
   overflow-y: auto;
 }
 

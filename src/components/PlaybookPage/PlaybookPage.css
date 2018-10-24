@@ -25,7 +25,11 @@
   height: 63px;
 }
 
-.playbook-page .playbook-page-content .master-panel .master-panel__header .go-back-link{
+.playbook-page
+  .playbook-page-content
+  .master-panel
+  .master-panel__header
+  .go-back-link {
   color: white;
 }
 
@@ -103,6 +107,7 @@
   min-width: 500px;
   border-bottom: 15px solid black;
   flex: 1;
+  overflow-y: auto;
 }
 
 .playbook-page .playbook-page-content .details-panel {
@@ -119,9 +124,12 @@
 .playbook-page .playbook-page-content .details-panel__header {
   border-bottom: 3px solid black;
   padding: 15px 15px 15px 15px;
-  height: 63px; 
+  height: 63px;
 }
 
 .playbook-page .playbook-page-content .details-panel__content {
   overflow-y: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
 }

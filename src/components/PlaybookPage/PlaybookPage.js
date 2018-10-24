@@ -65,10 +65,10 @@ class PlaybookPage extends React.Component {
             onContentSelected={this.onContentSelected.bind(this)}
           />
           <div className="details-panel">
-            <div className="details-panel--header">
+            <div className="details-panel__header">
               <h2>{this.state.detailTitle}</h2>
             </div>
-            <div className="details-panel--content">
+            <div className="details-panel__content">
               <ul>
                 {this.state.detailData.map((data, index) => {
                   return <li key={index}>{data}</li>;

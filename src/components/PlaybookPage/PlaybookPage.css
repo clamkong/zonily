@@ -106,9 +106,16 @@
   border-right: 10px solid black;
   width: 400px;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.playbook-page .playbook-page-content .details-panel--header {
+.playbook-page .playbook-page-content .details-panel__header {
   border-bottom: 3px solid black;
   padding: 15px 15px 15px 15px;
+  height: 63px; 
+}
+
+.playbook-page .playbook-page-content .details-panel__content {
+  overflow-y: auto;
 }

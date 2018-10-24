@@ -3,8 +3,8 @@ import HistoryTimelineChapter from './HistoryTimeline';
 import TipsTricks from "./TipsTricks";
 
 const payload = {
-  sectionId: 0,
-  sectionTitle: "Storyline",
+  sectionId: 1,
+  title: "Storyline",
   chapters: [
       IntroductionChapter,
       HistoryTimelineChapter,

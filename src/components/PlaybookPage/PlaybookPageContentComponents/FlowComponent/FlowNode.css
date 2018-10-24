@@ -3,6 +3,7 @@
     background-color: white;
     display: flex;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .flow-node__content{

@@ -17,7 +17,9 @@ class ChapterRow extends React.PureComponent {
           return (
             <SubChapterRow
               key={subChapter.subChapterId}
+              onSubChapterSelected={this.props.onSubChapterSelected}
               subChapter={subChapter}
+              match={this.props.match}
             />
           );
         })}

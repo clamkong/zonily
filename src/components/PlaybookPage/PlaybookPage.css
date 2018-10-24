@@ -104,6 +104,7 @@
   border-left: 5px solid black;
   border-right: 10px solid black;
   min-width: 300px;
+  color: white;
 }
 
 .playbook-page .playbook-page-content .details-panel--header {

@@ -132,7 +132,7 @@ const data = {
             'Even faster than Daughter Thai, he understood how to start and build a business',
             'Accounting, Taxes, Cash flow',
             'Challenges of building out of town',
-            'Building relationships (who you can trust) for employees, no connections'
+            'Building relationships (who you can trust) for employees, no connections',
             'After 6 months, the system was up and running',
             'Became the Top #1 restaurant in Thai cooking in Portland',
             'Focused on locals (as well as tourists) to make them feel a part of Farmhouse’s growth',

@@ -30,7 +30,7 @@ const AppRouter = subscribe()(({ user }) => {
               <Route path="/cart" component={MyCartPage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/sandbox" component={AuthorDetails} />
-              <Route path="/playbook/:pId/chapter" component={PlaybookPage} />
+              <Route path="/playbook/:pId/:cId" component={PlaybookPage} />
               <Route path="/playbook/:pId" component={PlaybookOverviewPage} />
               <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>

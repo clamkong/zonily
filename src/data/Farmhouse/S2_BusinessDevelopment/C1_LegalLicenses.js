@@ -37,11 +37,12 @@ const data = {
       ]
     },
     {
-      id: 1,
+      subChapterId: 1,
       title: 'Bank account and CPA– takes 1 week',
       type: "STACK",
       data: [
         {
+          id: 0,
           title: 'Bank account',
           content: [
             'Need to have',
@@ -62,6 +63,7 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: 'CPA (tips and tricks) - $250/hr - $575/hr',
           content: [
             'How to know if you have the right one?',
@@ -83,11 +85,12 @@ const data = {
       ]
     },
     {
+      subChapterId: 3,
       type: "STACK",
-      id: 2,
       title: 'Licenses, Location and Approval',
       data: [
         {
+          id: 0,
           title: 'Location',
           content: [
             'Location',
@@ -98,6 +101,7 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: 'Department Approval',
           content: [
             'Fire Department – any construction you want to do',
@@ -109,6 +113,7 @@ const data = {
           ]
         },
         {
+          id: 2,
           title: 'Licenses',
           content: [
             'C1R3 Box 1 - ABC License – alcohol license ($230, varies by location)',
@@ -131,11 +136,12 @@ const data = {
       ]
     },
     {
-      id: 3,
+      subChapterId: 3,
       title: 'Key Takeaways',
       type: "STACK",
       data: [
         {
+          id: 0,
           title: 'Working with health departments',
           content: [
             'Check with them what they need and work around it',
@@ -150,6 +156,7 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: 'Understand the tax system',
           content: [
             'Between 18-22% tax deduction, make sure it is within the range',
@@ -168,6 +175,7 @@ const data = {
           ]
         },
         {
+          id: 2,
           title: 'Employee handbook',
           content: [
             'Emergency handling',
@@ -179,10 +187,12 @@ const data = {
           ]
         },
         {
+          id: 3,
           title: '$20-30 million/year then you need an umbrella corporation, otherwise keep it separately run corporations',
           content: []
         },
         {
+          id: 4,
           title: 'Places to learn',
           content: [
             'CPA',
@@ -195,11 +205,12 @@ const data = {
       ]
     },
     {
+      subChapterId: 4,
       type: "STACK",
-      id: 4,
       title: "Farmhouses's experience",
       data: [
         {
+          id: 0,
           title: 'Took 3 months to open',
           content: [
             'Signed lease and started renovations',
@@ -213,6 +224,7 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: 'Restaurants (4) - 2 c-corp and 2 s-corp',
           content: []
         }

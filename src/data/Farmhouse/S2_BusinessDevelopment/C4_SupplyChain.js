@@ -3,11 +3,12 @@ const data = {
   chapterId: 1,
   subChapters: [
     {
-      id: 0,
+      subChapterId: 0,
       type: "STACK",
       title: 'Food',
       data: [
         {
+          id: 0,
           title: 'Food star – ones that don’t make money because the cost of making it is so high but draws customers in',
           content: [
             'beef rib plate with blue rice',
@@ -21,6 +22,7 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: 'Money makers – ones that are fillers that customers order that the restaurant generates a profit from',
           content: [
             'Paid thai',
@@ -29,6 +31,7 @@ const data = {
           ]
         },
         {
+          id: 2,
           title: "Examples",
           content: [
             'Snake liver farm – high standard beef',
@@ -42,6 +45,7 @@ const data = {
       ]
     },
     {
+      subChapterId: 1,
       type: "TEXT",
       title: 'Tips and Tricks',
       data: [

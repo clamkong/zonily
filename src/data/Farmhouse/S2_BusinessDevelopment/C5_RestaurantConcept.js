@@ -8,6 +8,7 @@ const data = {
       type: "STACK",
       data: [
         {
+          id: 0,
           title: "Focus on the right customer, age and demographic",
           content: [
             "25-60 years old",
@@ -15,6 +16,7 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: "Have unique features of your restaurant",
           content: [
             "Birthday song (exciting, fun, energetic)",
@@ -25,6 +27,7 @@ const data = {
           ]
         },
         {
+          id: 2,
           title: "Overall business development summary",
           content: [
             "Yourself – know what you want and what to expect",

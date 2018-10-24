@@ -58,7 +58,7 @@ const data = {
       ]
     },
     {
-      id: 1,
+      subChapterId: 1,
       type: "STACK",
       title: 'Location',
       data: [
@@ -110,8 +110,8 @@ const data = {
       ]
     },
     {
+      subChapterId: 2,
       type: "STACK",
-      id: 2,
       title: 'Recognizing Success',
       data: [
         {

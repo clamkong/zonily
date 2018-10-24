@@ -1,9 +1,9 @@
 import React from "react";
 
-const TextComponent = () => {
+const TextComponent = ({data}) => {
   return (
     <div className="playbook-content-component">
-      Text type content will be shown in this component
+      {data}
     </div>
   );
 };

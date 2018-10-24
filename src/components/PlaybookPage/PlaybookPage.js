@@ -1,15 +1,14 @@
 import React from "react";
 import allPlaybooks from "../../data/mock/allPlaybooks";
-import { Input } from "semantic-ui-react";
+
 import "./PlaybookPage.css";
-import { Route } from "react-router-dom";
-import TextComponent from "./PlaybookPageContentComponents/TextComponent";
-import Link from "react-router-dom/Link";
-// import FlowComponent from "./FlowComponent/FlowComponent";
-// import PieComponent from "./PlaybookPageContentComponents/PieComponent/PieComponent";
+
 import FarmhousePlaybook from "../../data/Farmhouse/MasterPayload";
-import ContentComponentManager from "../../util/ContentComponentManager";
-import SectionRow from "./SectionRow";
+
+import MasterPanel from "./MasterPanel";
+import ContentPanel from "./ContentPanel";
+
+import { Route } from "react-router-dom";
 
 class PlaybookPage extends React.Component {
   constructor(props) {
@@ -27,7 +26,8 @@ class PlaybookPage extends React.Component {
     this.state = {
       currentChapter: 0,
       currentSubchapter: {},
-      detailId: undefined
+      detailData: [],
+      detailTitle: ""
     };
   }
 
@@ -35,55 +35,46 @@ class PlaybookPage extends React.Component {
     this.setState({ currentChapter: chapter });
   }
 
-  onSubChapterClick(subchapter) {
-    this.setState({ currentSubchapter: subchapter });
-  }
-
   onContentSelect(id) {
     console.log("content selected");
     this.setState({ detailId: id });
+  }
+
+  onContentSelected(details, detailTitle) {
+    console.log("content selected");
+    this.setState({ detailData: details });
+    this.setState({ detailTitle: detailTitle });
+  }
+
+  onSubChapterSelected(subchapter) {
+    this.setState({ currentSubchapter: subchapter });
+    this.setState({ detailData: [], detailTitle: ""})
   }
 
   render() {
     return (
       <div className="playbook-page app-page">
         <div className="playbook-page-content">
-          <div className="master-panel">
-            <div className="master-panel--header">
-              <Input
-                fluid
-                className="playbook-page-content-search"
-                icon="search"
-                placeholder="Search for Playbook Content"
-              />
-            </div>
-            <div className="master-panel--content">
-              {FarmhousePlaybook.sections.map(section => {
-                return <SectionRow key={section.sectionId} />;
-              })}
-            </div>
-          </div>
-          <div className="content-panel">
-            <div className="content-panel--header">
-              <h2>{this.state.currentSubchapter.title}</h2>
-            </div>
-            <div className="content-panel--content">
-              <Route
-                path={`${this.props.match.path}/:cid`}
-                render={() => {
-                  const manager = new ContentComponentManager(); //prob don't need this as instance
-                  return manager.getComponent(this.state.currentSubchapter);
-                  // return <FlowComponent onSliceClicked={this.onContentSelect.bind(this)} />;
-                  // return "content panel";
-                }}
-              />
-            </div>
-          </div>
+          <MasterPanel
+            match={this.props.match}
+            sections={FarmhousePlaybook.sections}
+            onSubChapterSelected={this.onSubChapterSelected.bind(this)}
+          />
+          <ContentPanel
+            currentSubchapter={this.state.currentSubchapter}
+            onContentSelected={this.onContentSelected.bind(this)}
+          />
           <div className="details-panel">
             <div className="details-panel--header">
-              <h2>Detail Title</h2>
+              <h2>{this.state.detailTitle}</h2>
             </div>
-            <div className="details-panel--content">{"Heylo"}</div>
+            <div className="details-panel--content">
+              <ul>
+                {this.state.detailData.map((data, index) => {
+                  return <li key={index}>{data}</li>;
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -109,3 +100,16 @@ export default PlaybookPage;
 //     }
 //   )
 // }
+
+// <Route
+//   path={`${this.props.match.path}/:cid`}
+//   render={({ match }) => {
+//     return (
+//       <ContentPanel
+//         match={match}
+//         currentSubchapter={this.state.currentSubchapter}
+//         onContentSelected={this.onContentSelected}
+//       />
+//     );
+//   }}
+// />

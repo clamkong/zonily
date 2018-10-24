@@ -29,8 +29,8 @@ export default class StackContainer extends React.Component {
   }
 
   stackConstructor(stackData){
-    return stackData.map(stack => {
-      return <Stack stack={stack}/>
+    return stackData.map((stack, index) => {
+      return <Stack key={index} stack={stack}/>
     })
   }
 

@@ -6,9 +6,8 @@ export default class Stack extends React.Component {
   }
 
   generateStackInfo(){
-    debugger;
-    return this.props.stack.stackInfo.map(stack => {
-      return <div className='stack-info'>{stack}</div>
+    return this.props.stack.stackInfo.map((stack, index) => {
+      return <div key={index} className='stack-info'>{stack}</div>
     })
   }
 

@@ -90,6 +90,9 @@
 
 .playbook-page .playbook-page-content .content-panel .content-panel__content {
   color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
 }
 
 .playbook-page .playbook-page-content h2 {

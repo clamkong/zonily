@@ -80,12 +80,13 @@
   margin-left: 80px;
 }
 
-.playbook-page .playbook-page-content .content-panel .content-panel--header {
+.playbook-page .playbook-page-content .content-panel .content-panel__header {
   border-bottom: 3px solid black;
   padding: 15px 15px 15px 15px;
+  height: 63px;
 }
 
-.playbook-page .playbook-page-content .content-panel .content-panel--content {
+.playbook-page .playbook-page-content .content-panel .content-panel__content {
   color: white;
 }
 

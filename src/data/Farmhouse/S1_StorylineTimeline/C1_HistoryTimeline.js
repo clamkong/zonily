@@ -1,5 +1,4 @@
 const data = {
-  type: "FLOW",
   title: "History and Timeline",
   chapterId: 1,
   subChapters: [
@@ -9,9 +8,10 @@ const data = {
       type: "FLOW",
       data: [
         {
+          id: 0,
           title: 'Move to the US',
           date: '24 years old',
-          data: [
+          details: [
             'Born in Ihsan area of Thailand, grew up with his grandpa at his grandpa’s farm',
             'Had a computer science degree back in Thailand',
             'Moved to Denver, Colorado at the age of 24',
@@ -22,9 +22,10 @@ const data = {
           ]
         },
         {
+          id: 1,
           title: "Starting in the kitchen",
           date: "25 years old",
-          data: [
+          details: [
             '2 years to learn everything on the kitchen side as a prep cook',
             'Moved up from one station t to another, all the way to deep fry station (most advanced level)',
             '6 months to learn the backend kitchen',
@@ -44,9 +45,10 @@ const data = {
           ]
         },
         {
+          id: 2,
           title: 'Being a Manager',
           date: '26 years old',
-          data: [
+          details: [
             'After two years as a bartender, server “captain” head server a thai lady came and waited until the end of the shift to talk to him (waited over 3 hours)',
             'Found out that his friend referred him to the owner of Osha Thai, Lalita the older sister of two sisters that owned Osha Thai was the one waiting for him and offered him a job as the manager of Osha Thai',
             'Worked for 4 years as a manager, really appreciated the opportunity',
@@ -62,9 +64,10 @@ const data = {
           ]
         },
         {
+          id: 3,
           title: 'First Restaurant',
           date: '29 years old',
-          data: [
+          details: [
             'Thai Idea (vegetarian Thai cuisine)– First Restaurant',
             'Monpijjit, his friend that referred him to Lalita, offered to open a restaurant with him',
             'First vegetarian thai restaurant in the city',
@@ -88,9 +91,10 @@ const data = {
           ]
         },
         {
+          id: 4,
           title: 'Farmhouse',
           date: '31 years old',
-          data: [
+          details: [
             'After 3 years, feel good about breakfast and wanted to find another space so he submitted an application for multiple locations',
             'Found a place in the mission, used to be Mission Language School',
             'It was a really ghetto place and a lot of people said it was a bad idea, however there was a nice kitchen and two bathrooms so they (Pop and wife) decided to take it',
@@ -105,9 +109,10 @@ const data = {
           ]
         },
         {
+          id: 5,
           title: 'Second Location',
           date: '35 years old',
-          data: [
+          details: [
             'Daughter Thai',
             'Got a call from a friend that there was a space open in Montclair in East Bay',
             'Based on a true story of a little sister that grew up with a mom who owns a restaurant. She would help her mom during the summer with the restaurant and couldn’t go to summer camp or go out with friends because she had to help her mom. Grew up to dislike the restaurant business and denied being the daughter of a restaurant owner. Later on, she graduated and worked at a tech corporate company. Later on, she realized that she missed the environment of the restaurant, the family style, the food, the business, and the people. She finally decided to open her own restaurant. Based on the daughter of his partner, Pakim.',
@@ -125,9 +130,10 @@ const data = {
           ]
         },
         {
+          id: 6,
           title: 'Expansion',
           date: '36 years old',
-          data: [
+          details: [
             'Farmhouse Thai Kitchen in Portland (end of 2017)',
             'Even faster than Daughter Thai, he understood how to start and build a business',
             'Accounting, Taxes, Cash flow',

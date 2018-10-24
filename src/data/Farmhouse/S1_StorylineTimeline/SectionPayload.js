@@ -1,14 +1,12 @@
-import IntroductionChapter from "./Introduction"
-import HistoryTimelineChapter from './HistoryTimeline';
-import TipsTricks from "./TipsTricks";
+import C1_HistoryTimeline from './C1_HistoryTimeline';
+import C2_TipsTricks from "./C2_TipsTricks";
 
 const payload = {
   sectionId: 1,
   title: "Storyline",
   chapters: [
-      IntroductionChapter,
-      HistoryTimelineChapter,
-      TipsTricks
+      C1_HistoryTimeline,
+      C2_TipsTricks
   ]
 };
 

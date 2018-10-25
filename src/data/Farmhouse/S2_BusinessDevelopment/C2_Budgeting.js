@@ -83,25 +83,62 @@ const data = {
           ]
         },
         {
-          type: "TEXT",
+          type: "GRID",
           title: "Tips and Tricks",
           data: [
-            'You need to know exactly what to expect in sales, revenue, cost, and taxes so that you can lock in low prices, not waste money, and not get the IRS suspicious',
-            'A lot of restaurants fail in less than a year or a few years',
-            'Not much experience in running a restaurant',
-            'IRS go after them',
-            'If you are an investor, don’t expect to be able to take out your money for a long time due to taxes when you retrieve the money (capital gains)',
-            'Friend A invested with Friend B and opened a restaurant in LA. Friend A owns a popular restaurant in SF and so used the money to invest in Friend B in LA. Friend B in LA has no experience running a restaurant. That restaurant is all losses and less than $1-2,000 in sales per day. Friend A tried to take money out but cannot',
-            'You need to understand restaurant management and system',
-            'As an investor you need to understand what to expect and how to teach',
-            'Don’t work together with family and friends otherwise you will fight',
-            'Otherwise you have to learn how to win some and lose some',
-            'You should rollover one restaurant’s money into another one as tax efficiency',
-            'Know the demographic of your clients',
-            'Jack London square is a place of celebration, cocktail menu has to be very good',
-            'Focus on multiple streams of income, from food and also from drinks',
-            'Try not to take money out of the corporation as income, maximize on taking it out on payroll, otherwise you will have to pay high taxes',
-            'If you need money, you can loan from the corporation and you can decide on the regulations and interest of the loan'
+            {
+              id: 0,
+              title: 'Labor',
+              details: [
+                'Pay yourself as a high pay employee rather than taking out directly from the corporation (payroll is deducted from the company)',
+                'Don’t pay yourself too high, save money in the corporation so you can use the money to buy another one (otherwise you will pay double taxes, income and sales tax)',
+              ]
+
+            },
+            {
+              id: 1,
+              title: 'Taxes',
+              details: [
+                'Income tax, employee tax, simple tax (air pollution tax, soda tax, recycling tax, etc.), sales tax, etc.',
+                'Pay your taxes weekly so the IRS won’t question you differences between years (especially first year to second year)',
+                'You should rollover one restaurant’s money into another one as tax efficiency'
+              ]
+            },
+            {
+              id: 2,
+              title: "Revenue and Growth",
+              details: [
+                "$4 million in the first year, 20-30% growth year after year ($6-7 million in 4-5 years)",
+                "You need to know exactly what to expect in sales, revenue, cost, and taxes so that you can lock in low prices, not waste money, and not get the IRS suspicious",
+                "Focus on multiple streams of income, from food and also from drinks",
+                "Try not to take money out of the corporation as income, maximize on taking it out on payroll, otherwise you will have to pay high taxes",
+                "If you need money, you can loan from the corporation and you can decide on the regulations and interest of the loan"
+              ]
+            },
+            {
+              id: 3,
+              title: "Other",
+              details: [
+                "Don’t work together with family and friends otherwise you will fight",
+                "Otherwise you have to learn how to win some and lose some",
+                "Know the demographic of your clients",
+                "Jack London square is a place of celebration, cocktail menu has to be very good ",
+                "A lot of restaurants fail in less than a year or a few years",
+                "Not much experience in running a restaurant",
+                "IRS go after them",
+                "If you are an investor, don’t expect to be able to take out your money for a long time due to taxes when you retrieve the money (capital gains)"
+              ]
+            },
+            {
+              id: 4,
+              title: "Story",
+              details: [
+                "Friend A invested with Friend B and opened a restaurant in LA. Friend A owns a popular restaurant in SF and so used the money to invest in Friend B in LA. Friend B in LA has no experience running a restaurant. That restaurant is all losses and less than $1-2,000 in sales per day. Friend A tried to take money out but cannot",
+                "Lessons",
+                "You need to understand restaurant management and system",
+                "As an investor you need to understand what to expect and how to teach"
+              ]
+            }
           ]
         }
     ]

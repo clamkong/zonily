@@ -4,12 +4,17 @@ const data = {
   subChapters: [
     {
       subChapterId: 0,
-      title: 'Incorporation',
+      title: 'Legality and Lisences',
       type: "STACK",
       data: [
         {
           id: 0,
           title: 'Type',
+          content: [
+            "Type",
+            "Articles of Incorporation",
+            "EIN ($300)"
+          ],
           content: [
             '$800-1,200 (use the $800, all you need is EIN and Articles of Inc.)',
             'C corp – do this if you are selling more than $3 million',
@@ -19,33 +24,13 @@ const data = {
           ]
         },
         {
-          id: 1,
-          title: 'Articles of incorporation',
-          content: [
-            'Set up a high valuation, $1,000,000',
-            'if you have a low value $100,000, then you have to pay extra tax at 55% income tax if you sell and have a higher valuation)',
-            'If you set a high value and you sell at a loss, then it is a tax write-off'
-          ]
-        },
-        {
           id: 2,
-          title: 'EIN $300',
+          title: "Accounting",
           content: [
-            'Drove to Sacramento to register takes 2-3 days to send it to you otherwise 2-3 weeks to mail it to you if you register online',
-            'Remember this like it’s your social security #'
-          ]
-        }
-      ]
-    },
-    {
-      subChapterId: 1,
-      title: 'Bank account and CPA',
-      type: "STACK",
-      data: [
-        {
-          id: 0,
-          title: 'Bank account',
-          content: [
+            "Bank Account",
+            "CPA (tips and tricks) $250/hr - $575/hr"
+          ],
+          details: [
             'takes 1 week',
             'Need to have',
             'Shareholder split',
@@ -62,13 +47,6 @@ const data = {
             'Chase is good for 1st year then the fee is high and penalty if a min is not met',
             'Use the company bank account for expenses',
             'Tax write-offs',
-          ]
-        },
-        {
-          id: 1,
-          title: 'CPA',
-          content: [
-            '$250/hr - $575/hr',
             'How to know if you have the right one?',
             'Get a second opinion',
             'Have your own balance sheet',
@@ -84,41 +62,24 @@ const data = {
             'Air pollution tax, bux tax, etc',
             'Federal and state taxes of your location'
           ]
-        }
-      ]
-    },
-    {
-      subChapterId: 3,
-      type: "STACK",
-      title: 'Licenses, Location and Approval',
-      data: [
+        },
         {
-          id: 0,
-          title: 'Location',
+          id: 2,
+          title: 'Liscences and Approvals',
           content: [
-            'Location',
+            "Location",
+            "Department Approval",
+            "Liscences",
             'Submit the lease',
             'Check if you can improve the kitchen',
             'Get the contract from the contractor',
-            'Get all permits and approvals'
-          ]
-        },
-        {
-          id: 1,
-          title: 'Department Approval',
-          content: [
+            'Get all permits and approvals',
             'Fire Department – any construction you want to do',
             'Building Department – any construction you want to do',
             'Health Department – free',
             'PRT Inspection – cooling system, storage of pre-cooked items, stock of raw supplies (meat and vegetables), cleanliness (hand soap, hand wash)',
             'Re-inspection - $140 - check tips and tricks',
-            'They have to ask for permission to come in for a checkup (cannot just walk in)'
-          ]
-        },
-        {
-          id: 2,
-          title: 'Licenses',
-          content: [
+            'They have to ask for permission to come in for a checkup (cannot just walk in)',
             'C1R3 Box 1 - ABC License – alcohol license ($230, varies by location)',
             'Sometimes the building already has an ABC license that you can transfer to your corporation',
             'Go to the building department before you submit the paperwork',
@@ -135,18 +96,16 @@ const data = {
             'Flooding – pay for 1 week of opportunity cost',
             'Earthquake'
           ]
-        }
-      ]
-    },
-    {
-      subChapterId: 3,
-      title: 'Key Takeaways',
-      type: "STACK",
-      data: [
+        },
         {
-          id: 0,
-          title: 'Working with health departments',
+          title: "Takeaways",
           content: [
+            'Working with health departments',
+            'Understand the tax system',
+            'Employee handbook',
+            'Places to learn'
+          ],
+          details: [
             'Check with them what they need and work around it',
             'They will give you pressure',
             'Make friends',
@@ -155,13 +114,7 @@ const data = {
             '1-2:00pm always',
             'Ask to be first or last',
             'Request information to submit notify them first',
-            'Always come on Christmas Day'
-          ]
-        },
-        {
-          id: 1,
-          title: 'Understand the tax system',
-          content: [
+            'Always come on Christmas Day',
             'Between 18-22% tax deduction, make sure it is within the range',
             'Tax write-offs',
             'Employee meals',
@@ -175,47 +128,27 @@ const data = {
             'Make your own balance sheet and ASK them to deduct',
             'Make sure you set up automatic pay for tax because if you miss it by 1 day then you will pay penalty',
             'Employee handbook',
-          ]
-        },
-        {
-          id: 2,
-          title: 'Employee handbook',
-          content: [
             'Emergency handling',
             'Tip handling',
             'How to earn $$$',
             'If insurance asks employees if they were trained',
             'No then 9% increase',
-            'Yes then 4% increase (regular)'
-          ]
-        },
-        {
-          id: 3,
-          title: '$20-30 million/year then you need an umbrella corporation, otherwise keep it separately run corporations',
-          content: []
-        },
-        {
-          id: 4,
-          title: 'Places to learn',
-          content: [
+            'Yes then 4% increase (regular)',
             'CPA',
             'Restaurant association',
             'Couple classes from city college',
             'City hall - get a checklist on what you have to do',
             'Dont try to google, you will get random information and opinions'
           ]
-        }
-      ]
-    },
-    {
-      subChapterId: 4,
-      type: "STACK",
-      title: "Farmhouses's experience",
-      data: [
+        },
         {
-          id: 0,
-          title: 'Took 3 months to open',
+          id: 3,
+          title: "Farmhouses's experience",
           content: [
+            'Took 3 months to open',
+            'Restaurants (4) - 2 c-corp and 2 s-corp'
+          ],
+          details: [
             'Signed lease and started renovations',
             'Health department – get list (you can pass with conditions)',
             'Building Department',
@@ -225,11 +158,6 @@ const data = {
             'After you fix from the Health Department suggestions, they will come back within the 1st week – 90 days',
             'Employee handbook'
           ]
-        },
-        {
-          id: 1,
-          title: 'Restaurants (4) - 2 c-corp and 2 s-corp',
-          content: []
         }
       ]
     }

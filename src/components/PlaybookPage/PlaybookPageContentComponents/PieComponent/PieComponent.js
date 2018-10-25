@@ -46,6 +46,7 @@ class PieComponent extends React.Component {
       const textAnchor = cos >= 0 ? "start" : "end";
       return (
         <text
+          fill="white"
           x={x}
           y={y}
           textAnchor={x > cx ? "start" : "end"}

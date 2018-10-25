@@ -15,13 +15,13 @@ class ContentPanel extends React.Component {
   render() {
     return (
       <div className="content-panel">
-        <div className="content-panel--header">
+        <div className="content-panel__header">
           <h2>
             {this.props.currentSubchapter &&
               this.props.currentSubchapter.title}
           </h2>
         </div>
-        <div className="content-panel--content">
+        <div className="content-panel__content">
           {this.manager.getComponent(
             this.props.currentSubchapter,
             this.props.onContentSelected

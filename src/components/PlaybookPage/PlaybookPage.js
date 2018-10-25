@@ -40,7 +40,7 @@ class PlaybookPage extends React.Component {
     this.setState({ detailId: id });
   }
 
-  onContentSelected(details, detailTitle) {
+  onContentSelected(details = [], detailTitle) {
     console.log("content selected");
     this.setState({ detailData: details });
     this.setState({ detailTitle: detailTitle });
@@ -48,7 +48,7 @@ class PlaybookPage extends React.Component {
 
   onSubChapterSelected(subchapter) {
     this.setState({ currentSubchapter: subchapter });
-    this.setState({ detailData: [], detailTitle: ""})
+    this.setState({ detailData: [], detailTitle: "" });
   }
 
   render() {
@@ -65,15 +65,19 @@ class PlaybookPage extends React.Component {
             onContentSelected={this.onContentSelected.bind(this)}
           />
           <div className="details-panel">
-            <div className="details-panel--header">
+            <div className="details-panel__header">
               <h2>{this.state.detailTitle}</h2>
             </div>
-            <div className="details-panel--content">
-              <ul>
-                {this.state.detailData.map((data, index) => {
-                  return <li key={index}>{data}</li>;
-                })}
-              </ul>
+            <div className="details-panel__content">
+              {this.state.detailData.length == 0 ? (
+                <p>Select an item to see more details</p>
+              ) : (
+                <ul>
+                  {this.state.detailData.map((data, index) => {
+                    return <li key={index}>{data}</li>;
+                  })}
+                </ul>
+              )}
             </div>
           </div>
         </div>

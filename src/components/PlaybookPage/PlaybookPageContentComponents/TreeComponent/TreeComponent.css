@@ -1,0 +1,33 @@
+.tree-component .tree-node {
+  border: solid 3px white;
+  border-radius: 3px;
+  padding: 5px;
+  min-width: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tree-component .orgNodeChildGroup .nodeGroupLineVerticalMiddle {
+  border-right: solid 3px white;
+}
+
+.tree-component .orgNodeChildGroup .nodeCell {
+  border-bottom-color: #1e1e1e;
+  border-top-color: #1e1e1e;
+}
+
+.tree-component .nodeLineBorderTop {
+    border-top: solid 3px white;
+}
+
+.tree-component .nodeLineCell {
+    border-top: solid 3px #1e1e1e;
+}
+
+.tree-component .nodeGroupCell {
+    border-bottom-color: #1e1e1e;
+}
+
+.tree-component .nodeGroupCellLines {
+    border-bottom-color: #1e1e1e;
+}

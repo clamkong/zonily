@@ -45,6 +45,7 @@ const data = {
     {
       subChapterId: 1,
       title: 'External Events',
+      type: "STACK",
       data: [
         {
           id: 0,
@@ -102,14 +103,6 @@ const data = {
             "25 for #3"
           ]
         }
-      ]
-    },
-    {
-      subChapterId: 1,
-      title: 'Promotions',
-      type:
-      data: [
-
       ]
     }
   ]

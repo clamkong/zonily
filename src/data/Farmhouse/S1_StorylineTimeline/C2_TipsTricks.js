@@ -12,6 +12,8 @@ const data = {
           title: "First point: Timeline of enlightenment",
           content: [
             "It took 4 years for Chef Kasem to learn how to become an effective manager and through the process, reflect on his own life and future",
+          ],
+          details: [
             "1st year – selfish, high-tempered, fire many people in 1 day, beat people down",
             "2nd year – even worse, didn’t accept any mistakes, would send people home for a tiny mistake, like no lipstick",
             "3rd year - one of his coworkers said “you are a really selfish person, you are always negative and bad energy and trying to beat people down”, Pop stayed angry at it for a long time. Only cared about sales and growth of the business, not about the people",
@@ -23,6 +25,8 @@ const data = {
           title: "Keys to his growth",
           content: [
             "His coworker telling him that he is a negative, unhappy person",
+          ],
+          details: [
             "He almost passed out from not being able to breath by himself",
             "Quitting the manager role at Osha Thai and being depressed for 2 months before working at Sweet Maple",
             "Reading The Secret, wishing for money to help him, and then all of a sudden getting a check in the mail for tax return"
@@ -40,6 +44,8 @@ const data = {
           title: "Personal Life",
           content: [
             "Chef Kasem met his wife early on in his career as a server. Though it hasn’t been easy working with your spouse, his wife, ___, served a significant role in being his support system, adviser, and partner throughout his journey.",
+          ],
+          details: [
             "Met his wife at Grand Pubar",
             "Always positive thinking",
             "Strong character",
@@ -52,7 +58,9 @@ const data = {
           id: 1,
           title: "Tips on managing a personal life",
           content: [
-            "Keep everything at work and don’t bring it home",
+            "Keep everything at work and don’t bring it home"
+          ],
+          details: [
             "If you just want money and focus on that, you will be so stressed that you have no personal life",
             "Share your feelings",
             "Many designs and ideas are from Ing, she is very fashionable",
@@ -97,17 +105,10 @@ const data = {
           content: [
             "After 18 years of being in the restaurant journey and numerous ups and downs, Chef Kasem notes down his key realizations of what is most important in building a successful food business",
             "His managers become his partners (growth potential) – retention",
-            "Pop train them on building a restaurant system",
-            "Grow a server into a partner",
-            "Long-lasting business rather than only lasting 4-20 years max as a restaurant",
             "Have enough employees that rotate so never short on employees",
             "Keep full time employees close and provide good bonuses (tax write offs) and environment",
             "Managing the employee time",
-            "4 hours per shift, otherwise in danger of lack of break time if people go over and work overtime",
-            "Employee handbook",
-            "Have signatures to protect yourself",
             "The greater the supply you order and more guarantee that you can provide, the more room for negotiation you have",
-            "Setting the price, ordering on time",
             "Have cameras everywhere",
             "Have a system",
             "Build a great team",
@@ -116,12 +117,26 @@ const data = {
             "Annual server tasting",
             "After a few months, let the sytem work for you",
             "Focus on building a restaurant with a good environment and positive energy"
+          ],
+          details: [
+            "Pop train them on building a restaurant system",
+            "Grow a server into a partner",
+            "Long-lasting business rather than only lasting 4-20 years max as a restaurant",
+            "4 hours per shift, otherwise in danger of lack of break time if people go over and work overtime",
+            "Employee handbook",
+            "Have signatures to protect yourself",
+            "Setting the price, ordering on time"
           ]
         },
         {
           id: 1,
           title: "Examples of stories",
           content: [
+            "Customers",
+            "Employees",
+            "Outside Scams"
+          ],
+          details: [
             "Lady bought 12 shots of Black Label, when the employee stopped her and asked her for money, she slapped the employee",
             "Customer would come in with a suit and order a lot, then would say he has no money",
             "Just say: Thank you for trying to hard for this. Don’t try to argue with them.",

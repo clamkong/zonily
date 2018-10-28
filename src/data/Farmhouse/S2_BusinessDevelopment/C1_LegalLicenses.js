@@ -70,6 +70,8 @@ const data = {
             "Location",
             "Department Approval",
             "Liscences",
+          ],
+          details: [
             'Submit the lease',
             'Check if you can improve the kitchen',
             'Get the contract from the contractor',

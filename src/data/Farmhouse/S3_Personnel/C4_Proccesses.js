@@ -119,6 +119,85 @@ const data = {
           }
         ]
       }
+    },
+    {
+      subChapterId: 2,
+      title: "Front of House",
+      type: "STACK",
+      data: [
+        {
+          id: 0,
+          title: "Manager",
+          content: [
+            "Control the front, make sure customers are happy, and make sure servers are at their best"
+          ]
+        },
+        {
+          id: 1,
+          title: "Manager",
+          content: [
+            "Control the front, make sure customers are happy, and make sure servers are at their best"
+          ]
+        },
+        {
+          id: 2,
+          title: "Organization",
+          content: [
+            "Label different sections of the restaurant the front of the house"
+          ],
+          details: [
+            "A section - each table is A1, A2, etc",
+            "B Section - Bar",
+            "C Section - each table is C1, C2, et"
+          ]
+        },
+        {
+          id: 3,
+          title: "POS System",
+          content: [
+            "Organize by section of the restaurant",
+            "Guest list (guest1, guest2, guest3)",
+            "Appetizer order -> Kitchen -> Drink Order -> Bar"
+          ],
+          details: [
+            "Order go to the manager with an inventory report automatically calculated by the POS",
+            "Profit and loss (P&L) report goes to Chef Kasem at the end of each day"
+          ]
+        }
+      ]
+    },
+    {
+      subChapterId: 3,
+      title: 'Tips and Tricks',
+      type: 'STACK',
+      data: [
+        {
+          id: 0,
+          title: 'POS',
+          content: [
+            'All screens have text, i.e. Help C1 (Table) - then manager will keep an eye on it',
+            'Live intercom for all staff'
+          ]
+        },
+        {
+          id: 1,
+          title: 'Communication',
+          content: [
+            'Server cannot communicate with the kitchen to avoid miscommunication',
+            'Only POS tickets and orders are communicated to the kitchen by the server',
+            'Instead, the kitchen manager and front manager will communicate',
+            'Communicate with PICTURES instead of words to ensure everyone understands the prep and cleaning process'
+          ]
+        },
+        {
+          id: 2,
+          title: "Customer Management",
+          content: [
+            "Do best to get people in during non-peak hours by calling them and moving their reservations earlier",
+            "Have a bar so people can come and drink while they wait"
+          ]
+        }
+      ]
     }
   ]
 }

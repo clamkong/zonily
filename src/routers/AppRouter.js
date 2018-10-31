@@ -12,6 +12,7 @@ import Preorder from "../components/PreorderPage/PreorderPage";
 import PrivacyPolicyPage from "../components/PrivacyPolicyPage/PrivacyPolicyPage";
 import Header from "../components/Header/Header";
 import PlaybookPage from "../components/PlaybookPage/PlaybookPage";
+import Footer from "../components/Footer/Footer";
 
 const AppRouter = subscribe()(({ user }) => {
   console.log(user);
@@ -34,6 +35,7 @@ const AppRouter = subscribe()(({ user }) => {
               <Route path="/playbook/:pId" component={PlaybookOverviewPage} />
               <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>
+            <Footer />
           </div>
         ) : (
           <Switch>

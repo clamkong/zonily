@@ -7,7 +7,7 @@
  */
 
 footer {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     padding-bottom: 0rem;
     border-bottom: .5rem solid #465166;
 	font-size: 1.5rem;
@@ -42,7 +42,8 @@ footer ul li {
 .footer-main {
     padding-top: 2.5rem;
     padding-bottom: 0rem;
-	background: #171b23;
+    /* background: #171b23; */
+    background: black;
 }
 .footer-main ul {
 	font-size: 1.5rem;

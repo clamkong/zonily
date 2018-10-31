@@ -53,7 +53,7 @@ class PlaybookPage extends React.Component {
 
   render() {
     return (
-      <div className="playbook-page app-page">
+      <div className="playbook-page">
         <div className="playbook-page-content">
           <MasterPanel
             match={this.props.match}

@@ -21,21 +21,12 @@ const AppRouter = subscribe()(({ user }) => {
       <div className="App">
         {user.isAuthenticated ? (
           <div className="main-app">
-            <Header />
             <Switch>
-              <Route path="/" component={MarketplacePage} exact={true} />
-              <Route path="/privacy" component={PrivacyPolicyPage} />
-              <Route path="/preorder" component={Preorder} />
-              <Route path="/marketplace" component={MarketplacePage} />
-              <Route path="/myplaybooks" component={MyPlaybooksPage} />
-              <Route path="/cart" component={MyCartPage} />
-              <Route path="/about" component={AboutPage} />
-              <Route path="/sandbox" component={AuthorDetails} />
               <Route path="/playbook/:pId/:cId" component={PlaybookPage} />
-              <Route path="/playbook/:pId" component={PlaybookOverviewPage} />
-              <Route path="*" render={() => <Redirect to="/" />} />
+              <Route path="/" component={PrimaryLayout} />
+
+              <Redirect to="/" />
             </Switch>
-            <Footer />
           </div>
         ) : (
           <Switch>
@@ -51,3 +42,24 @@ const AppRouter = subscribe()(({ user }) => {
 });
 
 export default AppRouter;
+
+const PrimaryLayout = props => (
+  <div className="primary-layout">
+    <Header />
+    <main>
+      <Switch>
+        <Route path="/" component={MarketplacePage} exact={true} />
+        <Route path="/privacy" component={PrivacyPolicyPage} />
+        <Route path="/preorder" component={Preorder} />
+        <Route path="/marketplace" component={MarketplacePage} />
+        <Route path="/myplaybooks" component={MyPlaybooksPage} />
+        <Route path="/cart" component={MyCartPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/sandbox" component={AuthorDetails} />
+        <Route path="/playbook/:pId" component={PlaybookOverviewPage} />
+        <Route path="*" render={() => <Redirect to="/" />} />
+      </Switch>
+    </main>
+    <Footer />
+  </div>
+);

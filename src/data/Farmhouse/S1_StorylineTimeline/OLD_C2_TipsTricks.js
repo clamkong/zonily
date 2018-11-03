@@ -4,57 +4,32 @@ const data = {
   subChapters: [
     {
       subChapterId: 0,
-      title: "Growth",
+      title: "Being a Manager",
       type: "STACK",
       data: [
         {
           id: 0,
-          title: "Timeline of Growth",
+          title: "First point: Timeline of enlightenment",
           content: [
-            `Being a manager was a real turning point in Kasem’s life and career. As a manager, he was making great income, over $10,000 a month at Osha Thai, and it was a great opportunity for him at his age, background, and experience. However, it took him four years to develop himself to understand what it meant to be a great manager.`
+            "It took 4 years for Chef Kasem to learn how to become an effective manager and through the process, reflect on his own life and future",
           ],
           details: [
-            {
-              title:
-                "1st year – when he started as a manager, Kasem was selfish and high-tempered, wanting to perform and reach his goals. He would fire many people in  just one day and default to blaming his employees when they did not perform at his expectations."
-            },
-            {
-              title:
-                "2nd year – at his second year, Kasem was even worse as a manager. He didn’t accept any mistakes and would send people home for even one tiny blunder, such as not putting on lipstick."
-            },
-            {
-              title:
-                "3rd year - in his third year as a manager, one of the most significant instances in his management career occurred when one of his coworkers told him bluntly “you are a really selfish person, you are always negative, have bad energy, and trying to beat people down”. Kasem stayed angry at this person for a long time and blamed him for not understanding what it too to grow the restaurant business. He only cared about his goals and not the employees."
-            },
-            {
-              title:
-                "4th year – one day, after four years of working in the restaurant, he felt extremely nauseous while driving and felt that he was about to pass out. He realized that it was himself that forgot to breathe and he wasn’t receiving enough oxygen to his brain because of that. At that moment he realized that he was under so much pressure and not happy with his life. He realized that he has changed into a different person, and selfish and lonely person, and decided to change."
-            }
-          ]
+            "1st year – selfish, high-tempered, fire many people in 1 day, beat people down",
+            "2nd year – even worse, didn’t accept any mistakes, would send people home for a tiny mistake, like no lipstick",
+            "3rd year - one of his coworkers said “you are a really selfish person, you are always negative and bad energy and trying to beat people down”, Pop stayed angry at it for a long time. Only cared about sales and growth of the business, not about the people",
+            "4th year – he felt nauseous one day and realized he forgot to breathe, he realized that his coworker was right. He has changed into a different person, an unhappy person, and decided to change"
+          ],
         },
         {
           id: 1,
-          title: "Keys to Growth",
+          title: "Keys to his growth",
           content: [
-            "Although he was overworked and under tremendous pressure to perform and grow the business, his experience helped him learn the ins and outs of running a food business, allowed him reach tremendous personal development as an individual, and helped him realize what he truly wanted out of his life."
+            "His coworker telling him that he is a negative, unhappy person",
           ],
           details: [
-            {
-              title:
-                "His coworker played a significant role by telling him directly that he was a selfish person and that was what those around him viewed him as."
-            },
-            {
-              title:
-                "His incident of almost passing out due to all the pressure of the restaurant"
-            },
-            {
-              title:
-                "After finally quitting the manager role at Osha Thai, Kasem spent two months very depressed since he had to find his own identity and path after working at Osha for such a long time. He didn’t have energy for those two months to work and wasn’t making any income. His wife was supporting him at that time while he was self-reflecting and regaining his composure and direction."
-            },
-            {
-              title:
-                "During that time, he read the book The Secret that discussed the self-fulfilling prophecy of belief. At that time he was running out of money and really practiced the belief that money will come to him to pay his bills and one week later, he received a tax return. From then on, that book and the belief that he can make his dreams happen as long as he focused on them was engrained into his mind."
-            }
+            "He almost passed out from not being able to breath by himself",
+            "Quitting the manager role at Osha Thai and being depressed for 2 months before working at Sweet Maple",
+            "Reading The Secret, wishing for money to help him, and then all of a sudden getting a check in the mail for tax return"
           ]
         }
       ]
@@ -68,7 +43,7 @@ const data = {
           id: 0,
           title: "Personal Life",
           content: [
-            "Chef Kasem met his wife early on in his career as a server. Though it hasn’t been easy working with your spouse, his wife, ___, served a significant role in being his support system, adviser, and partner throughout his journey."
+            "Chef Kasem met his wife early on in his career as a server. Though it hasn’t been easy working with your spouse, his wife, ___, served a significant role in being his support system, adviser, and partner throughout his journey.",
           ],
           details: [
             "Met his wife at Grand Pubar",
@@ -82,7 +57,9 @@ const data = {
         {
           id: 1,
           title: "Tips on managing a personal life",
-          content: ["Keep everything at work and don’t bring it home"],
+          content: [
+            "Keep everything at work and don’t bring it home"
+          ],
           details: [
             "If you just want money and focus on that, you will be so stressed that you have no personal life",
             "Share your feelings",
@@ -154,7 +131,11 @@ const data = {
         {
           id: 1,
           title: "Examples of stories",
-          content: ["Customers", "Employees", "Outside Scams"],
+          content: [
+            "Customers",
+            "Employees",
+            "Outside Scams"
+          ],
           details: [
             "Lady bought 12 shots of Black Label, when the employee stopped her and asked her for money, she slapped the employee",
             "Customer would come in with a suit and order a lot, then would say he has no money",

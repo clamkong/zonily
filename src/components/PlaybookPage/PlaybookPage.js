@@ -85,18 +85,20 @@ class PlaybookPage extends React.Component {
               ) : (
                 <ul>
                   {this.state.detailData.map((data, index) => {
-                    return (
-                      <li key={index}>
+                    return <li key={index}>
                         {data.title}
-                        {data.children.length > 0 && (
-                          <ul>
-                            {data.children.map((child, index) => {
-                              return <li key={index}>{child}</li>;
-                            })}
-                          </ul>
-                        )}
-                      </li>
-                    );
+                        {data.children && data.children.length > 0 && <ul>
+                            {data.children.map(
+                              (child, index) => {
+                                return (
+                                  <li key={index}>
+                                    {child}
+                                  </li>
+                                );
+                              }
+                            )}
+                          </ul>}
+                      </li>;
                   })}
                 </ul>
               )}

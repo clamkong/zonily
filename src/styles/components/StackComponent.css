@@ -1,20 +1,21 @@
 .stack-component {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .stack-column {
-    border: 2px solid white;
-    cursor: pointer;
+  border: 2px solid white;
+  cursor: pointer;
+  flex: 1;
 }
 
 .stack-column .stack-column__title {
-    border-bottom: 2px solid white;
-    text-align: center;
+  border-bottom: 2px solid white;
+  text-align: center;
 }
 
 .stack-column .stack-column__content {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
 }

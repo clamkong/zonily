@@ -63,6 +63,30 @@ class PlaybookPage extends React.Component {
   //   {this.playbook.name}
   // </div>
   render() {
+    /**
+     * Get's either a nested list, or flat list based on data coming in
+     * @param {Object or String} data - If object, than nest, else flat
+     * @param {Number} index - for collection key
+     */
+    const getDetailList = (data, index) => {
+      if (data.title) {
+        return (
+          <li key={index}>
+            {data.title}
+            {data.children &&
+              data.children.length > 0 && (
+                <ul>
+                  {data.children.map((child, index) => {
+                    return <li key={index}>{child}</li>;
+                  })}
+                </ul>
+              )}
+          </li>
+        );
+      }
+
+      return <li key={index}>{data}</li>;
+    };
     return (
       <div className="playbook-page">
         <div className="playbook-page-content">
@@ -85,20 +109,7 @@ class PlaybookPage extends React.Component {
               ) : (
                 <ul>
                   {this.state.detailData.map((data, index) => {
-                    return <li key={index}>
-                        {data.title}
-                        {data.children && data.children.length > 0 && <ul>
-                            {data.children.map(
-                              (child, index) => {
-                                return (
-                                  <li key={index}>
-                                    {child}
-                                  </li>
-                                );
-                              }
-                            )}
-                          </ul>}
-                      </li>;
+                    return getDetailList(data, index);
                   })}
                 </ul>
               )}

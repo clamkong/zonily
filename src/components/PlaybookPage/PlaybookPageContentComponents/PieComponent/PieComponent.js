@@ -8,18 +8,13 @@ import "./PieComponent.css";
 class PieComponent extends React.Component {
   onSliceClicked(props) {
     console.log(props);
-    console.log(`Slice ${props.payload.name} selected`);
-    this.props.onSliceClicked && this.props.onSliceClicked(props.payload.id);
+    console.log(`Slice ${props.payload.title} selected`);
+
+    this.props.onContentSelected(props.payload.details, props.payload.title);
   }
   render() {
-    const data = [
-      { id: 0, name: "Marketing", value: 0.025 },
-      { id: 1, name: "Miscellaneous", value: 0.04 },
-      { id: 2, name: "Rent", value: 0.055 },
-      { id: 3, name: "Food", value: 0.24 },
-      { id: 4, name: "Labor", value: 0.55 },
-      { id: 5, name: "Profit", value: 0.09 }
-    ];
+    const data = this.props.data;
+
     const COLORS = [
       "#0E9D58",
       "#AB46BC",
@@ -51,7 +46,7 @@ class PieComponent extends React.Component {
           y={y}
           textAnchor={x > cx ? "start" : "end"}
           dominantBaseline="central"
-        >{`${(percent * 100).toFixed(0)}% - ${data[index].name}`}</text>
+        >{`${(percent * 100).toFixed(0)}% - ${data[index].title}`}</text>
       );
     };
 
@@ -61,13 +56,21 @@ class PieComponent extends React.Component {
           <PieChart>
             <Pie
               data={data}
+              nameKey="title"
               dataKey="value"
               label={renderCustomizedLabel}
               outerRadius="80%"
               onClick={this.onSliceClicked.bind(this)}
+              animationDuration={700}
+              animationBegin={200}
             >
               {data.map((entry, index) => (
-                <Cell key={index} fill={COLORS[index]} />
+                <Cell
+                  key={index}
+                  stroke={"#14181E"}
+                  fill={COLORS[index]}
+                  strokeWidth={2}
+                />
               ))}
             </Pie>
           </PieChart>

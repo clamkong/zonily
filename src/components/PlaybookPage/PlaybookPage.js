@@ -23,9 +23,17 @@ class PlaybookPage extends React.Component {
       }
     }
 
+    const getFirstSubchapter = () => {
+      const firstSection = FarmhousePlaybook.sections[0];
+      const firstChapter = firstSection.chapters[0];
+      const firstSubChapter = firstChapter.subChapters[0];
+
+      return firstSubChapter || {};
+    };
+
     this.state = {
       currentChapter: 0,
-      currentSubchapter: {},
+      currentSubchapter: getFirstSubchapter(),
       detailData: [],
       detailTitle: ""
     };
@@ -50,7 +58,10 @@ class PlaybookPage extends React.Component {
     this.setState({ currentSubchapter: subchapter });
     this.setState({ detailData: [], detailTitle: "" });
   }
-
+  // <img className="playbook-card-header--image" src={this.playbook.image} />
+  //                   <div className="playbook-page-header">
+  //   {this.playbook.name}
+  // </div>
   render() {
     return (
       <div className="playbook-page">
@@ -74,7 +85,18 @@ class PlaybookPage extends React.Component {
               ) : (
                 <ul>
                   {this.state.detailData.map((data, index) => {
-                    return <li key={index}>{data}</li>;
+                    return (
+                      <li key={index}>
+                        {data.title}
+                        {data.children.length > 0 && (
+                          <ul>
+                            {data.children.map((child, index) => {
+                              return <li key={index}>{child}</li>;
+                            })}
+                          </ul>
+                        )}
+                      </li>
+                    );
                   })}
                 </ul>
               )}

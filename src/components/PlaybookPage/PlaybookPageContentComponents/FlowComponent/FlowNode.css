@@ -1,17 +1,45 @@
-.flow-node{
-    /* border: solid 1px black; */
-    display: flex;
-    margin-bottom: 10px;
-    cursor: pointer;
+.flow-node {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-.flow-node__content{
-    border: solid 2px white;
-    width: 150px;
-    height: 100px;
+.flow-node__content {
+  width: 150px;
+  cursor: pointer;
 }
 
-.flow-node__edge{
-    margin-top: auto;
-    margin-bottom: auto;
+.flow-node__content .flow-node__content--top {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid white 3px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flow-node__content .flow-node__content--top div {
+  margin-top: 33%;
+}
+
+.flow-node__content .flow-node__content--bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.flow-node__content
+  .flow-node__content--bottom
+  .flow-node__content--bottom--title {
+  padding-bottom: 15px;
+}
+
+.flow-node__content
+  .flow-node__content--bottom
+  .flow-node__content--bottom--quick-points{
+  font-size: 1.3rem;
+}
+
+.flow-node__edge {
+  margin-top: 25%;
+  margin-bottom: auto;
 }

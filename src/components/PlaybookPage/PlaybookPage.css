@@ -13,6 +13,7 @@
   border-left: 10px solid black;
   border-right: 5px solid black;
   border-bottom: 15px solid black;
+  max-width: 300px;
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -133,4 +134,15 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
+}
+
+.playbook-page .playbook-page-header {
+  text-align: center;
+  height: 100px;
+}
+
+.playbook-page .playbook-page-header .playbook-card-header--image {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  height: 100%;
 }

@@ -17,17 +17,21 @@
 }
 
 .tree-component .nodeLineBorderTop {
-    border-top: solid 3px white;
+  border-top: solid 3px white;
 }
 
-.tree-component .nodeLineCell {
+.tree-component td {
+  border-bottom: 0px;
+}
+
+/* .tree-component .nodeLineCell {
     border-top: solid 3px #1e1e1e;
 }
-
-.tree-component .nodeGroupCell {
-    border-bottom-color: #1e1e1e;
+*/
+/* .tree-component .nodeGroupCell {
+    border-bottom: 0px;
 }
 
 .tree-component .nodeGroupCellLines {
-    border-bottom-color: #1e1e1e;
-}
+    border-bottom: 0px;
+}  */

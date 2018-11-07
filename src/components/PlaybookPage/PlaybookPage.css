@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 .playbook-page {
   background-color: #1e1e1e;
   height: 100%;
@@ -10,7 +14,6 @@
 
 .playbook-page .playbook-page-content .master-panel {
   background-color: black;
-  border-left: 10px solid black;
   border-right: 5px solid black;
   border-bottom: 15px solid black;
   max-width: 300px;
@@ -24,7 +27,7 @@
   border-bottom: 3px solid black;
   background-color: #1e1e1e;
   text-align: center;
-  height: 63px;
+  padding: 10px;
 }
 
 .playbook-page
@@ -48,13 +51,11 @@
 }
 
 .chapter-row {
-  margin-bottom: 5px;
-  background: #1e1e1e;
   color: #f3f3f3;
 }
 
 .chapter-row .chapter-row__title {
-  height: 50px;
+  margin-left: 30px;
 }
 
 .chapter-row .chapter-row__title div {
@@ -63,17 +64,13 @@
 
 .section-row {
   color: #f3f3f3;
-  text-align: center;
 }
 
 .section-row .section-row__title {
-  border-top: 1px solid white;
-  border-bottom: 1px white solid;
-  height: 50px;
-}
-
-.section-row .section-row__title div {
-  margin-top: 10px;
+  padding: 10px;
+  background: #1e1e1e;
+  text-align: center;
+  font-size: 20px;
 }
 
 .subchapter-row {
@@ -85,13 +82,18 @@
 
 .subchapter-row .subchapter-row__title {
   font-size: 1.4rem;
-  margin-left: 80px;
+  margin-left: 30px;
+  color: #048a7c;
+}
+
+.subchapter-row__title:hover {
+  color: #ff7b29;
 }
 
 .playbook-page .playbook-page-content .content-panel .content-panel__header {
   border-bottom: 3px solid black;
-  padding: 15px 15px 15px 15px;
-  height: 63px;
+  padding: 25px 15px 25px 15px;
+  text-align: center;
 }
 
 .playbook-page .playbook-page-content .content-panel .content-panel__content {
@@ -116,7 +118,6 @@
   background-color: #1e1e1e;
   border-bottom: 15px solid black;
   border-left: 5px solid black;
-  border-right: 10px solid black;
   width: 400px;
   color: white;
   display: flex;
@@ -125,15 +126,14 @@
 
 .playbook-page .playbook-page-content .details-panel__header {
   border-bottom: 3px solid black;
-  padding: 15px 15px 15px 15px;
-  height: 63px;
+  padding: 25px 15px 25px 15px;
+  text-align: center;
+  min-height: 83px;
 }
 
 .playbook-page .playbook-page-content .details-panel__content {
   overflow-y: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
+  padding: 15px 30px;
 }
 
 .playbook-page .playbook-page-header {

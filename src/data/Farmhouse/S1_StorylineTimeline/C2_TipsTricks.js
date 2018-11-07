@@ -61,7 +61,7 @@ const data = {
     },
     {
       subChapter: 1,
-      title: "Personal life",
+      title: "Personal Life",
       type: "STACK",
       data: [
         {

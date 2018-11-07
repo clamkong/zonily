@@ -15,7 +15,7 @@ const data = {
               title:
                 "Farmhouse took 3 months after signing the lease for the restaurant to open its doors"
             },
-            { title: "enovation took majority of the time prior to opening" },
+            { title: "Renovation took majority of the time prior to opening" },
             {
               title:
                 "If you are an investor, don’t expect to be able to take out your money for a long time due to capital gains taxes when you retrieve the money. Alternatively, you may be able to roll the money over into a new location without having to pay capital gains taxes"
@@ -199,44 +199,55 @@ const data = {
           id: 1,
           title: "Taxes",
           details: [
-            "Income tax, employee tax, simple tax (air pollution tax, soda tax, recycling tax, etc.), sales tax, etc.",
-            "Pay your taxes weekly so the IRS won’t question you differences between years (especially first year to second year)",
-            "You should rollover one restaurant’s money into another one as tax efficiency"
+            {
+              title: "Types of taxes that you will have to pay",
+              children: [
+                "Income tax",
+                "employee tax",
+                "simple tax (air pollution tax, soda tax, recycling tax, etc.)",
+                "sales tax"
+              ]
+            },
+            {
+              title:
+                "If you schedule your payments weekly, your cash flow is more clear to the IRS and there may be a lesser chance of being audited or raising red flags "
+            }
           ]
         },
         {
           id: 2,
           title: "Revenue and Growth",
           details: [
-            "$4 million in the first year, 20-30% growth year after year ($6-7 million in 4-5 years)",
-            "You need to know exactly what to expect in sales, revenue, cost, and taxes so that you can lock in low prices, not waste money, and not get the IRS suspicious",
-            "Focus on multiple streams of income, from food and also from drinks",
-            "Try not to take money out of the corporation as income, maximize on taking it out on payroll, otherwise you will have to pay high taxes",
-            "If you need money, you can loan from the corporation and you can decide on the regulations and interest of the loan"
+            "Farmhouse made $4 million in revenue  in the first year and grew 20-30% in revenue year after year, reaching $6 million in 6-7 years",
+            "Make sure you know what to expect each season and month in terms of revenue, for example, if holiday season is generally lower in revenue, you can find special events, discounts, to drive up the price.",
+            "Understanding the expected number of customers and revenue each month and season will also allow you to lock down the costs of the inventory so you don’t order too much or too little."
           ]
         },
         {
           id: 3,
           title: "Other",
           details: [
-            "Don’t work together with family and friends otherwise you will fight",
-            "Otherwise you have to learn how to win some and lose some",
-            "Know the demographic of your clients",
-            "Jack London square is a place of celebration, cocktail menu has to be very good ",
-            "A lot of restaurants fail in less than a year or a few years",
-            "Not much experience in running a restaurant",
-            "IRS go after them",
-            "If you are an investor, don’t expect to be able to take out your money for a long time due to taxes when you retrieve the money (capital gains)"
+            "If you are going to work with close friends or family, make sure you are ready to win some battles and lose some battles",
+            "Understand the demographic of your location, for example, is it a frequent place for celebration, tourists, or family casual eatery? Jack London Square is often a destination for celebration so it is important to have a cocktail menu and a festive atmosphere.",
+            "Understand the common pitfalls of restaurants that fail within the first year or the first few years; they do not know how to manage a restaurant, cash flow, or accounting/taxation. If you do not understand how to properly manage taxation and create an IRS audit that fails then it can bring down your business.",
+            "Don’t expect to retrieve the profit out of your business within the first few years of your business because it will cause a heavy capital gains burden."
           ]
         },
         {
           id: 4,
           title: "Story",
           details: [
-            "Friend A invested with Friend B and opened a restaurant in LA. Friend A owns a popular restaurant in SF and so used the money to invest in Friend B in LA. Friend B in LA has no experience running a restaurant. That restaurant is all losses and less than $1-2,000 in sales per day. Friend A tried to take money out but cannot",
-            "Lessons",
-            "You need to understand restaurant management and system",
-            "As an investor you need to understand what to expect and how to teach"
+            {
+              title: `One of Kasem’s friends, Friend A, invested with another friend, Friend B, and opened a restaurant in Los Angeles, California. 
+                Friend A owns a popular restaurant in San Francisco and used some of the profit to invest in Friend B for a new Los Angeles location. 
+                Friend B that opened the new location had no prior experience running a restaurant. That restaurant soon resulted in major losses and made less 
+                than $1-2,000 in sales per day. Friend A tried to retrieve her money back from the investment but could not. She asked Kasem why the restaurant did 
+                not work since her first one was so successful. Kasem told her that it’s because she did not take a major role in teaching Friend B how to build and run a restaurant.`,
+              children: [
+                "A restaurateur needs to understand restaurant management and having a system",
+                "As an investor you need to understand what to expect and how to teach your knowledge to others in order to empower them to succeed"
+              ]
+            }
           ]
         }
       ]

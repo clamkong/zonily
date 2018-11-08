@@ -9,28 +9,41 @@ const data = {
       data: [
         {
           id: 0,
+          period: "",
           title: 'Line Cook 1 -> Line Cook 2 -> Checker -> Food Runner -> Server (delivery) -> Manager -> Kitchen Manager',
-          details: [
-          ]
+          details: [],
+          quickPoints: []
         },
         {
           id: 1,
           title: 'Server -> Manager -> Kitchen Manager',
+          period: "",
+          quickPoints: [],
           details: [
-            "POS",
-            "No food without ticket",
-            "All VOID tickets are sent to the manager for monitoring",
-            "POS order",
-            "Example - Click table C1",
-            "Fire appetizers, fire entrees, fire dessert"
+            {
+              title: "POS",
+              children: [
+                `"No food without ticket",
+                "All VOID tickets are sent to the manager for monitoring",
+                "POS order",
+                "Example - Click table C1",
+                "Fire appetizers, fire entrees, fire dessert"`
+              ]
+            }
           ]
         },
         {
           id: 2,
           title: 'Kitchen',
+          period: "",
+          quickPoints: [],
           details: [
-            "Make the big orders first",
-            "Combine orders if they are the same (e.g. pad thai or fried rice)"
+            {
+              title: "Make the big orders first",
+              children: [
+                `"Combine orders if they are the same (e.g. pad thai or fried rice)"`
+              ]
+            }
           ]
         },
       ]
@@ -42,48 +55,75 @@ const data = {
       data: [
         {
           id: 0,
+          period: "",
+          quickPoints: [],
           title: 'Greeting - specific message including programs',
           details: [
-            "We have a spicy challenge",
-            "Most liked instagram picture",
-            "Give them tips on how they can win"
+            {
+              title: "We have a spicy challenge",
+              children: [
+                `"Most liked instagram picture",
+                "Give them tips on how they can win"`
+              ]
+            }
           ]
         },
         {
           id: 1,
           title: 'Upsell - what they like',
-          details: [
-
-          ]
+          period: "",
+          quickPoints: [],
+          details: []
         },
         {
           id: 2,
           title: 'Knowledge of menu',
+          period: "",
+          quickPoints: [],
           details: [
-            "Sauce",
-            "Dish story",
-            "How it's made",
-            "Why it costs so much"
+            {
+              title: "Sauce",
+              children: [
+                `"Dish story",
+                "How it's made",
+                "Why it costs so much"`
+              ]
+            }
           ]
         },
         {
           id: 3,
           title: 'Service/care - double check with customer',
+          period: "",
+          quickPoints: [],
           details: [
-            "Spicy level",
-            "If it's good and they like it"
+            {
+              title: "Spicy level",
+              children: [
+                `If it's good and they like it"`
+              ]
+            }
           ]
         },
         {
           id: 4,
           title: "Dessert",
+          period: "",
+          quickPoints: [],
           details: []
         },
         {
           id: 5,
           title: "Gift Card/Events",
+          period: "",
+          quickPoints: [],
           details: [
-            'Offer a chance to make it special for an upcoming special event (birthday, anniversary, etc)'
+            {
+              title: "Offer a Chance",
+              children: [
+                `'Offer a chance to make it special for an upcoming special event (birthday, anniversary, etc)'`
+              ]
+            }
           ]
         },
       ]

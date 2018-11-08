@@ -8,24 +8,48 @@ const data = {
       type: "FLOW",
       data: [
         {
-          title: "1. Partnerships",
+          title: "Partnerships",
+          period: 1,
+          quickPoints: [],
           details: [
-            "Managers and employee’s to step up and request to become partner to open additional Farmhouse locations",
-            "New generation of business owners to run Farmhouse for the next 5 - 10 years"
+            {
+              title: "Partnerships",
+              children: [
+                `"Managers and employee’s to step up and request to become partner to open additional Farmhouse locations",
+                "New generation of business owners to run Farmhouse for the next 5 - 10 years"`
+              ]
+            }
+
           ]
         },
         {
-          title: "2. Initial Public Offering",
+          title: "Initial Public Offering",
+          period: 2,
+          quickPoints: [],
           details: [
-            "Go IPO(2 - 3 years) ",
-            "Need to be corporation",
-            "5 years of sales with at least 20 % profit each year",
-            "30% shares become public"
+            {
+              title: "On IPO",
+              children: [
+                `"Go IPO(2 - 3 years) ",
+                "Need to be corporation",
+                "5 years of sales with at least 20 % profit each year",
+                "30% shares become public"`
+              ]
+            }
           ]
         },
         {
-          title: "3. International Markets",
-          details: ["Go International "]
+          title: "International Markets",
+          period: 3,
+          quickPoints: [],
+          details: [
+            {
+              title: "Global Market",
+              children: [
+                `"Go International"`
+              ]
+            }
+          ]
         }
       ]
     },
@@ -35,38 +59,51 @@ const data = {
       type: "FLOW",
       data: [
         {
-          title: "Year 1 - Build a Team",
-          details: ["Build a Team"]
+          title: "Build a Team",
+          period: "Year 1",
+          quickPoints: ["Build a Team"],
+          details: []
         },
         {
-          title: "Year 2 - Farmhouse Cuisine and Story",
-          details: ["build Chef Kasem story and cuisine"]
+          title: "Farmhouse Cuisine and Story",
+          period: "Year 2",
+          quickPoints: ["build Chef Kasem story and cuisine"],
+          details: []
         },
         {
-          title: "Year 3 - Social Media and Documentation",
-          details: ["social media branding online and paper trail"]
+          title: "Social Media and Documentation",
+          period: "Year 3",
+          quickPoints: ["social media branding online and paper trail"],
+          details: []
         },
         {
-          title: "Year 4 - Corporate System and Structure",
-          details: [
+          title: "Corporate System and Structure",
+          period: "Year 4",
+          quickPoints: [
             "corporate system",
             "Management system ",
             "Legal system",
             "Tax system"
+          ],
+          details: [
           ]
         },
         {
-          title: "Year 5 - Farmhouse Brand",
-          details: [
+          title: "Farmhouse Brand",
+          period: "Year 5",
+          quickPoints: [
             "Farmhouse brand",
             "Event ",
             "Consumer food products",
-            "Consumer brand products(T - shirts, etc.) "
+            "Consumer brand products(T - shirts, etc.) "],
+          details: [
           ]
         },
         {
-          title: "Year 6 - Prepare IPO",
-          details: ["Press", "News", "Team", "Structure of the company "]
+          title: "Prepare IPO",
+          period: "Year 6",
+          quickPoints: ["Press", "News", "Team", "Structure of the company"],
+          details: []
         }
       ]
     }

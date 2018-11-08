@@ -14,6 +14,8 @@ import Header from "../components/Header/Header";
 import PlaybookPage from "../components/PlaybookPage/PlaybookPage";
 import Footer from "../components/Footer/Footer";
 
+import "./PrimaryLayout.css";
+
 const AppRouter = subscribe()(({ user }) => {
   console.log(user);
   return (

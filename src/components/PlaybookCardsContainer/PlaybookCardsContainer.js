@@ -17,6 +17,7 @@ const PlaybookCardsContainer = ({ playbooks }) => (
               name={playbook.name}
               image={playbook.image}
               id={playbook.id}
+              description={playbook.description}
             />
           );
         })}

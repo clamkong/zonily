@@ -10,7 +10,7 @@
 
 .playbook-card:hover {
   cursor: pointer;
-  box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
 }
 
 .playbook-card .playbook-card-image {
@@ -35,4 +35,10 @@
 .playbook-card .playbook-card-content h2 {
   color: white;
   padding-top: 10px;
+}
+
+.playbook-card .playbook-card-content .playbook-card__description {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #f2f2f2;
 }

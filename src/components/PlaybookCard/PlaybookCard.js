@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter, NavLink } from "react-router-dom";
 import "./PlaybookCard.css";
 
-const PlaybookCard = ({ name, id, image, history }) => {
+const PlaybookCard = ({ name, id, image, description }) => {
   // const pid = id;
   // const onClick = function(){
   //   return function(){
@@ -19,7 +19,7 @@ const PlaybookCard = ({ name, id, image, history }) => {
         <div className="playbook-card-content">
           <h2>{name}</h2>
           <div className="playbook-card__description">
-            Description of Playbook {name}
+            {description ? description : `Coming Soon!`}
           </div>
         </div>
       </NavLink>

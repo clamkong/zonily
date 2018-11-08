@@ -6,16 +6,24 @@ import { Link } from "react-router-dom";
 class MasterPanel extends React.Component {
   constructor(props) {
     super(props);
-    this.sections = props.sections;
+    this.sections = props.sections || [];
     this.props.match;
+    this.readOnly = props.readOnly;
   }
-  
+
   render() {
     return (
       <div className="master-panel">
-        <div className="master-panel__header">
-          <button><Link className="go-back-link" to={`/playbook/${this.props.match.params.pId}`}>Back to Overview</Link></button>
-        </div>
+        {!this.readOnly && (
+          <div className="master-panel__header">
+            <Link
+              className="go-back-link"
+              to={`/playbook/${this.props.match.params.pId}`}
+            >
+              <button>Back to Overview</button>
+            </Link>
+          </div>
+        )}
         <div className="master-panel__content">
           {this.sections.map(section => {
             return (

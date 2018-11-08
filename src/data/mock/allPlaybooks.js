@@ -11,49 +11,42 @@ const allPlaybooks = [
   {
     id: 1,
     name: "Farmhouse Thai",
-    description: "lorem",
+    description: "Popular Thai Restaurant Icon in the San Francisco Bay Area",
     image: FarmhouseThaiLogo
   },
   {
     id: 11,
     name: "Les Gourmand",
-    description: "lorem",
     image: LesGourmandLogo
   },
   {
     id: 21,
     name: "GoFresh",
-    description: "lorem",
     image: GoFreshLogo
   },
   {
     id: 31,
     name: "Bobabia",
-    description: "lorem",
     image: BobabiaLogo
   },
   {
     id: 41,
     name: "Nana Joes",
-    description: "lorem",
     image: NanaJoesLogo
   },
   {
     id: 51,
     name: "Pathwater",
-    description: "lorem",
     image: PathwaterLogo
   },
   {
     id: 6,
     name: "Core Foods",
-    description: "lorem",
     image: CoreFoodsLogo
   },
   {
     id: 7,
     name: "Paina",
-    description: "lorem",
     image: PainaLogo
   }
 ];

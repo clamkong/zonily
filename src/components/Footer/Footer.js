@@ -61,11 +61,6 @@ const Footer = () => {
                 </a>
               </span>
             </div>
-            <div id="go-top" style={{ display: "block" }}>
-              <a className="smoothscroll" title="Back to Top" href="#top">
-                <i className="icon ion-android-arrow-up" />
-              </a>
-            </div>
           </div>
         </div>
       </div>

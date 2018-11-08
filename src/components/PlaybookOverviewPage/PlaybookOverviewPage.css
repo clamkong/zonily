@@ -10,17 +10,21 @@
   border-bottom: solid black 5px;
   width: calc(100% - 275px);
   height: 555px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #1e1e1e;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-color: #1e1e1e; */
   padding: 30px 30px 30px 30px;
+  background-color: #f2f2f2;
 }
 
 .playbook-overview-page-hero .hero-container {
   color: #f3f3f3;
 }
 
-.playbook-overview-page-hero .hero-container h1 {
+.playbook-overview-page-hero .hero-container .hero-container__title {
+}
+
+.playbook-overview-page-hero .hero-container .hero-container__title h1 {
   color: #f3f3f3;
 }
 
@@ -30,7 +34,9 @@
 
 .playbook-overview-page-outline {
   border: solid black 1px;
-  width: 275px;
+  width: 295px;
+  overflow-y: auto;
+  height: 470px;
 }
 
 .playbook-overview-page .playbook-overview-page-content-bottom {
@@ -45,12 +51,11 @@
 }
 
 .playbook-overview-page-course-info {
-  border: solid black 1px;
+  margin-right: 25px;
   width: 25%;
 }
 
 .playbook-overview-page-course-description {
-  border: solid black 1px;
   width: 75%;
 }
 
@@ -62,16 +67,16 @@
 }
 
 .action-tile {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.action-tile button{
-    margin: 20px 20px 20px 20px;
-    width: 80%;
-    color: white;
+.action-tile button {
+  margin: 20px 20px 20px 20px;
+  width: 80%;
+  color: white;
 }
 
-.action-tile button a{
-    color: white;
+.action-tile button a {
+  color: white;
 }

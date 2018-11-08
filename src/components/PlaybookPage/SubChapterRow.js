@@ -8,18 +8,34 @@ class SubChapterRow extends React.PureComponent {
   }
 
   selectSubchapter() {
-    console.log("subchapter selected", this.subChapter.title)
-    this.props.onSubChapterSelected(this.subChapter);
+    console.log("subchapter selected", this.subChapter.title);
+    this.props.onSubChapterSelected && this.props.onSubChapterSelected(this.subChapter);
   }
 
   render() {
-    return <div className="subchapter-row">
+    let content = (
+      <div
+        className="subchapter-row__title"
+        onClick={this.selectSubchapter.bind(this)}
+      >
+        {this.subChapter.title}
+      </div>
+    );
+
+    if (this.props.match) {
+      content = (
         <Link to={`${this.props.match.url}/${this.subChapter.subChapterId}`}>
-          <div className="subchapter-row__title" onClick={this.selectSubchapter.bind(this)}>
+          <div
+            className="subchapter-row__title"
+            onClick={this.selectSubchapter.bind(this)}
+          >
             {this.subChapter.title}
           </div>
         </Link>
-      </div>;
+      );
+    }
+
+    return <div className="subchapter-row">{content}</div>;
   }
 }
 
